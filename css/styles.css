@@ -3185,12 +3185,14 @@ header .menu-icon .section-title {
 	.about-third .wrapper{
 		padding: 0 8rem 4rem;
     	margin-bottom: 10rem;
+		max-width: 380px;
+		height: auto;
 	}
 	.about-third .carousel__control--backward {
-		left: 2rem;
+		left: 2.5rem;
 	}
 	.about-third .carousel__control--forward {
-		right: 7rem;
+		right: 6.5rem;
 	}
 	.about-third .carousel img{
 		height: 340px;
@@ -3593,7 +3595,7 @@ header .menu-icon .section-title {
 		left: 60% !important;
 	}
 	.team .gallery-item-team-3 {
-		height: 300px !important;
+		height: 250px !important;
     	width: 280px !important;
 	  }
 	.team .next-button, .team .back-button {
