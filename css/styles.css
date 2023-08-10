@@ -2526,6 +2526,14 @@ header .menu-icon .section-title {
 		font-size: 18px;
 		line-height: 30px;
 	}
+	.home-bottom .home-bottom-text .discover-more {
+		padding: 1rem;
+	}
+	.home-bottom .home-bottom-text .discover-more a {
+		font-size: 24px;
+		line-height: 28px;
+		padding: 1rem 2rem;
+	}
 
 	/*ABOUT US*/
 	.aboutus .about-text h1{
@@ -2544,7 +2552,11 @@ header .menu-icon .section-title {
 
 	/*ABOUT SECOND*/
 	.about-second .about-second-text{
-		padding: 10rem 35rem 4rem;
+		padding: 10rem 20rem 2rem;
+	}
+	.about-second .about-second-text {
+		row-gap: 1rem;
+		justify-content: center;
 	}
 	.about-second .about-second-text h1{
 		font-size: 40px;
@@ -2575,21 +2587,33 @@ header .menu-icon .section-title {
 	}
 	.about-second .about-second-text .text-wrapper {
 		row-gap: 1rem;
-		padding: 2rem 6rem 0;
+    	padding: 2rem 4rem 0;
 	}
-	.about-second-phone {
-		bottom: 15rem;
+	.about-second .about-second-text .text-wrapper .text-content {
+		row-gap: 1rem;
+	}
+	.about-second .about-second-more {
+		padding: 2rem;
+	}
+	.about-second .about-second-more a {
+		font-size: 24px;
+		line-height: 28px;
+		padding: 2rem 2rem;
 		width: 250px;
-		left: 10rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
-	.about-second-tv {
-		bottom: 28rem;
-		right: 6rem;
-		width: 250px;
+	.about-second .about-second-more a span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1rem;
 	}
-
-	/*ABOUT THIRD*/
-	
+	.about-second .about-second-more a span svg{
+		width: 30px;
+	}
+	/*ABOUT THIRD*/	
 	.about-third .about-third-text{
 		padding: 10rem 35rem 4rem;
 	}
@@ -2617,20 +2641,24 @@ header .menu-icon .section-title {
 		height: 30px;
 	}
 	.about-third .carousel img{
-		height: auto;
+		height: 330px;
 		width: 220px;
 	}
 	.about-third .wrapper{
-		padding: 0 21rem 4rem;
+		padding: 0 20rem 2rem;
+		margin-bottom: 10rem;
+	}
+	.about-third .next-button, .about-third .back-button {
+		padding: 1.5rem 1rem;
 	}
 	.about-third .carousel__control--backward {
-		left: 8rem;
+		left: 12rem;
 	}
 	.about-third .carousel__control--forward {
-		right: 8rem;
+		right: 12rem;
 	}
 	.about-third .carousel__control svg {
-		width: 80px;
+		width: 30px;
     	height: auto;
 	}
 	.about-third .carousel .team-item .team-more {
@@ -2639,7 +2667,49 @@ header .menu-icon .section-title {
 	.about-third .carousel .team-item .team-more .position{
 		font-size: 16px;
 	}
-
+	/*TEAM SECTION*/
+	.team .team-text {
+		padding: 5rem 30rem;
+	}
+	.team .team-text h1 {
+		font-size: 40px;
+    	line-height: 40px;
+	}
+	.team .team-text h4 {
+		font-size: 24px;
+    	line-height: 28px;
+	}
+	.team .gallery-team {
+		padding-bottom: 2rem;
+	}
+	.team .gallery-container-team {
+		height: 300px;
+		max-width: 1200px;
+	}
+	.team .gallery-item-team-3 {
+		height: 300px;
+		width: 420px;
+	}
+	.team .gallery-item-team-2, .team .gallery-item-team-4 {
+		height: 250px;
+		width: 350px;
+	}
+	.team .gallery-item-team {
+		height: 200px;
+		width: 300px;
+	}
+	.team .back-button {
+		left: -5rem;
+	}
+	.team .next-button {
+		right: -5rem;
+	}
+	.team .next-button, .team .back-button {
+		padding: 1rem 1rem;
+	}
+	.team .next-button, .team .back-button svg {
+		width: 30px;
+	}
 	/*SERVICES*/
 	.services .services-text{
 		padding: 15rem 30rem;
@@ -2838,7 +2908,7 @@ header .menu-icon .section-title {
 	}
 
 	.menu-desktop {
-		display: none;
+		display: none !important;
 	}
 
 	header .menu-icon .section-title {
@@ -2898,7 +2968,9 @@ header .menu-icon .section-title {
 	.home-bottom .home-bottom-text h1 span{
 		padding: 0;
 	}
-	
+	.home-bottom .video-wrapper {
+		display: none;
+	}
 	.home-bottom .home-bottom-text p{
 		font-size: 14px;
     	line-height: 14px;
@@ -3022,7 +3094,7 @@ header .menu-icon .section-title {
 	}
 	/* ABOUT SECOND   */
 	.about-second .about-second-text{
-		padding: 12rem 4rem 1rem;
+		padding: 12rem 2rem 1rem;
 		justify-content: start;
 	}
 	.about-second .about-second-text h1{
@@ -3030,8 +3102,9 @@ header .menu-icon .section-title {
 		line-height: 32px;
 	}
 	.about-second .about-second-text h4{
-		font-size: 20px;
-		line-height: 28px;
+		font-size: 16px;
+		line-height: 20px;
+		padding: 0;
 	}
 	.about-second .about-second-text p{
 		font-size: 12px;
@@ -3047,31 +3120,19 @@ header .menu-icon .section-title {
 	.about-second .about-second-text .text-wrapper {
 		row-gap: 0.25rem;
 		padding: 0;
+		column-gap: 1rem;
 	}
-	.about-second-phone {
-		bottom: 10rem;
-		width: 120px;
-		left: 1rem;
-	}
-	.about-second-tv {
-		bottom: 8rem;
-		right: 1rem;
+	.about-second .about-second-more a {
+		font-size: 16px;
+		line-height: 20px;
+		padding: 1rem 0rem;
 		width: 200px;
-	}
-	.about-second-circle {
-		bottom: 10rem;
-		width: 120px;
-		left: 1rem;
-	}
-	.blue-circle {
-		bottom: 8rem;
-		right: 1rem;
-		width: 120px;
 	}
 	/*  ABOUT THIRD  */
 	.about-third .about-third-text{
 		padding: 12rem 4rem 0rem;
 		row-gap: 2rem;
+		justify-content: center;
 	}
 	.about-third .about-third-text h1{
 		font-size: 32px;
@@ -3091,18 +3152,18 @@ header .menu-icon .section-title {
 	}
 	/*Carousel*/
 	.about-third .wrapper{
-		padding: 0 3rem 6rem;
-		margin-bottom: 6rem;
+		padding: 0 5rem 4rem;
+    	margin-bottom: 15rem;
 	}
 	.about-third .carousel__control--backward {
-		left: 0.5rem;
+		left: 1rem;
 	}
 	.about-third .carousel__control--forward {
-		right: 0.5rem;
+		right: 5rem;
 	}
 	.about-third .carousel img{
-		height: auto;
-		width: 100px;
+		height: 200px;
+		width: 130px;
 	}  
 	.about-third .carousel .team-item{
 		margin-left: 10px;
@@ -3118,7 +3179,11 @@ header .menu-icon .section-title {
 		font-size: 8px;
 	}
 	.about-third .carousel__control svg {
-		width: 30px;
+		width: 20px;
+	}
+	/*TEAM SECTION*/
+	.team .team-text {
+
 	}
 	/*SERVICES*/
 	.services .services-text{

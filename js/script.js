@@ -29,7 +29,13 @@ canvas.height = window.innerHeight;
 
 const particleRadius = window.innerWidth < 500 ? 1.5 : 1.5;
 const particleCount = window.innerWidth < 500 ? 250 : 900; 
-const circleRadius = window.innerWidth < 500 ? 200 : 300;
+let circleRadius = 180;
+if (window.innerWidth > 1400) {
+  circleRadius = 300;
+}
+if (window.innerWidth > 500 && window.innerWidth < 1400) {
+  circleRadius = 250;
+}
 const maxSpeed = 1;
 const motionRadius = window.innerWidth < 500 ? 40 : 80; 
 
