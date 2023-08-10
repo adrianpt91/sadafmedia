@@ -3,13 +3,13 @@ const menu = document.querySelector('.menu');
 const main = document.querySelector('main');
 const logoWhite = document.querySelector('.white');
 const logoBlack = document.querySelector('.black');
-const mouse = document.querySelector('.mouse');
+const mouseScroll = document.querySelector('.mouse');
 
 menuIcon.addEventListener('click', function() {
 	menuIcon.classList.toggle('rotate');
 	menu.classList.toggle('show');
 
-	if (mouse.classList.contains('mouseActive')) {
+	if (mouseScroll.classList.contains('mouseActive')) {
     if (menu.classList.contains('show')) {
       logoWhite.style.display = 'block';
       logoBlack.style.display = 'none'; 
@@ -393,5 +393,3 @@ const exampleCarouselTeam = new CarouselTeam(galleryContainerTeam, galleryItemsT
 
 exampleCarouselTeam.setControls();
 exampleCarouselTeam.useControls();
-
-

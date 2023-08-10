@@ -605,7 +605,7 @@ header .menu-icon .section-title {
 }
 .home-bottom .video-wrapper{
 	position: absolute;
-    height: 35%;
+    height: 30%;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -1413,16 +1413,20 @@ header .menu-icon .section-title {
     background-repeat: no-repeat;
     background-size: cover;
 	overflow: hidden;
+	position: relative;
 }
 .services .services-text{
 	width: 100%;
     height: 100%;
-    padding: 15rem 40rem;
+    padding: 25rem 40rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     text-align: center;
 	row-gap: 2rem;
+}
+.services .services-text canvas{
+	position: absolute !important;
 }
 .services .services-text h1{
 	font-weight: 700;
@@ -1444,6 +1448,61 @@ header .menu-icon .section-title {
 	line-height: 17px;
 	text-transform: inherit;
 }
+.services .services-text .text-wrapper {
+	display: flex;
+	padding-top: 5rem;
+    text-align: left;
+    column-gap: 2rem;
+}
+.services .services-text .text-wrapper .text-content {
+	display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+@keyframes drop {
+	0% {
+	  transform: translateY(-100vh);
+	  animation-timing-function: ease-in; }
+	40% {
+	  transform: translateY(-30vh);
+	  animation-timing-function: ease-in; }
+	  65% {
+	  transform: translateY(-20vh);
+	  animation-timing-function: ease-in; }
+	  82% {
+	  transform: translateY(-10vh);
+	  animation-timing-function: ease-in; }
+	  92% {
+	  transform: translateY(-5vh);
+	  animation-timing-function: ease-in; }
+	  25%, 55%, 75%, 87%, 97%, 100% {
+	  transform: translateY(0);
+	  animation-timing-function: ease-out; }
+}
+/* .services .first {
+	background: #FFD601;
+	animation-delay: 0.2s;
+}
+.services .second {
+	background: #FB6C26;
+	animation-delay: 0.4s;
+}
+.services .three {
+	background: #70E1CC; 
+	animation-delay: 0.6s;
+}
+.services .four {
+	background: #3338E0; 
+	animation-delay: 0.8s;
+}
+.services .five {
+	background: #FFD601; 
+	animation-delay: 1.0s;
+}
+.services .six {
+	background: #3338E0; 
+	animation-delay: 1.2s;
+} */
 .services .services-text .services-more{
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1459,123 +1518,82 @@ header .menu-icon .section-title {
 	transform: scale(1.2) !important;
 	z-index: 1;
 	transition: all 0.6s ease-in-out; 
-}
-.services .services-text .text-wrapper {
-	display: flex;
-	padding-top: 5rem;
-    text-align: left;
-    column-gap: 2rem;
-}
-.services .services-text .text-wrapper .text-content {
-	display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-}
-.services .first {
-	transition: all 0.8s ease-in-out; 
-	opacity: 0;
-	transform: translate3d(-200px, -200px, 150px);
-}
-.services .second {
-	transition: all 0.8s ease-in-out; 
-	opacity: 0;
-	transform: translate3d(50px, -250px, 150px);
-}
-.services .three {
-	transition: all 0.8s ease-in-out; 
-	opacity: 0;
-	transform: translate3d(200px, -200px, 150px);
-}
-.services .four {
-	transition: all 0.8s ease-in-out; 
-	opacity: 0;
-	transform: translate3d(-200px, 150px, 150px);
-}
-.services .five {
-	transition: all 0.8s ease-in-out; 
-	opacity: 0;
-	transform: translate3d(-50px, 200px, 150px);
-}
-.services .six {
-	transition: all 0.8s ease-in-out; 
-	opacity: 0;
-	transform: translate3d(200px, 150px, 150px);
-}
+}  
 .service.first .icon{
 	position: absolute;
-    padding-top: 4rem;
-    width: 40px;
+    padding-top: 2rem;
+    width: 30px;
 }
 .service.first .service-text{
 	position: absolute;
-    bottom: 5rem;
+    bottom: 3rem;
     width: 200px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
 }
 .service.second .icon{
 	position: absolute;
-    padding-top: 4rem;
-    width: 60px;
+    padding-top: 2rem;
+    width: 40px;
 }
 .service.second .service-text{
 	position: absolute;
     bottom: 4rem;
     width: 110px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
 }
 .service.three .icon{
 	position: absolute;
-    padding-top: 4rem;
-    width: 80px;
+    padding-top: 2rem;
+    width: 60px;
 }
 .service.three .service-text{
 	position: absolute;
     bottom: 3rem;
     width: 110px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
 }
 .service.four .icon{
 	position: absolute;
-    padding-top: 4rem;
-    width: 80px;
+    padding-top: 2rem;
+    width: 60px;
 }
 .service.four .service-text{
 	position: absolute;
     bottom: 4rem;
     width: 200px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
 }
 .service.five .icon{
 	position: absolute;
-    padding-top: 4rem;
-    width: 80px;
+    padding-top: 2rem;
+    width: 60px;
 }
 .service.five .service-text{
 	position: absolute;
     bottom: 5rem;
     width: 200px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
 }
 .service.six .icon{
 	position: absolute;
-    padding-top: 4rem;
-    width: 60px;
+    padding-top: 2rem;
+    width: 40px;
 }
 .service.six .service-text{
 	position: absolute;
     bottom: 5rem;
     width: 110px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 800;
 }
 
 .services .services-text .services-more .service .circle{
-	width: 200px;
+	width: 150px;
 }
 
 .services .services-text .service-wrapper {
@@ -2317,12 +2335,12 @@ header .menu-icon .section-title {
 /*               LOCATION             */
 /* ********************************** */
 .location {
-	background: #FFF;
+	/* background: #FFF; */
     height: 100vh;
-	background-image: url('../images/location_back.png');
+	/* background-image: url('../images/location_back.png');
 	background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 	overflow: hidden;
 }
 .location .location-text{

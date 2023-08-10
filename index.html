@@ -373,7 +373,7 @@
 								in our ability to produce the content that will elevate your brand. 
 								We will put your message out there, where it belongs – in the market, 
 								getting people talking, driving traffic and achieving results.
-							</p>
+							</p>							
 						</div>
 					</div>
 					<div class="service-wrapper">
@@ -381,35 +381,35 @@
 							<div class="service first">
 								<img class="icon" src="images/services/1/icon.png" alt="service icon">
 								<img class="circle" src="images/services/1/circle.png" alt="service circle">
-								<p class="service-text">MEDIA STRATEGY CONSULTANCY</p>
+								<h5 class="service-text">MEDIA STRATEGY CONSULTANCY</h5>
 							</div>
 							<div class="service second">
 								<img class="icon" src="images/services/2/icon.png" alt="service icon">
 								<img class="circle" src="images/services/2/circle.png" alt="service circle">
-								<p class="service-text">CREATIVE BRANDING & DESIGN</p>
+								<h5 class="service-text">CREATIVE BRANDING & DESIGN</h5>
 							</div>
 							<div class="service three">
 								<img class="icon" src="images/services/3/icon.png" alt="service icon">
 								<img class="circle" src="images/services/3/circle.png" alt="service circle">
-								<p class="service-text">CREATIVE BRANDING & DESIGN</p>
+								<h5 class="service-text">CREATIVE BRANDING & DESIGN</h5>
 							</div>
 							<div class="service four">
 								<img class="icon" src="images/services/4/icon.png" alt="service icon">
 								<img class="circle" src="images/services/4/circle.png" alt="service circle">
-								<p class="service-text">VIDEOGRAPHY & PHOTOGRAPHY</p>
+								<h5 class="service-text">VIDEOGRAPHY & PHOTOGRAPHY</h5>
 							</div>
 							<div class="service five">
 								<img class="icon" src="images/services/5/icon.png" alt="service icon">
 								<img class="circle" src="images/services/5/circle.png" alt="service circle">
-								<p class="service-text">ANIMATION</p>
+								<h5 class="service-text">ANIMATION</h5>
 							</div>
 							<div class="service six">
 								<img class="icon" src="images/services/6/icon.png" alt="service icon">
 								<img class="circle" src="images/services/6/circle.png" alt="service circle">
-								<p class="service-text">SOCIAL MEDIA</p>
+								<h5 class="service-text">SOCIAL MEDIA</h5>
 							</div>
 						</div>
-					</div>				
+					</div>
 				</div>
 			</div>			
 			<!--WORK SECTION-->
@@ -551,7 +551,7 @@
 			<!--CONTACT US SECTION-->
 			<div class="section contactus child">
 				<video autoplay muted loop class="video-location" data-autoplay>
-					<source src="images/abu_dhabi.mp4" type="video/mp4">
+					<source src="images/abu_dhabi2.mp4" type="video/mp4">
 				</video>
 				<div class="contactus-text">
 					<h1>LETS TALK</h1>
@@ -584,6 +584,9 @@
 			</div>
 			<!--LOCATION SECTION-->
 			<div class="section location child">
+				<video autoplay muted loop class="back-video" data-autoplay>
+					<source src="images/abu_dhabi.mp4" type="video/mp4">
+				</video>
 				<div class="location-text">
 					<h1>WHERE WE ARE</h1>
 					<div>
@@ -704,18 +707,25 @@
 			  </div>
 			</div>
 		</div>
-					
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+			crossorigin="anonymous" referrerpolicy="no-referrer">
+		</script>
 		<script type="text/javascript" src="js/fullpage.js"></script>
 		<script>
 			// Remove the loading screen when the content is loaded
 			window.addEventListener('load', function() {
 			  var loadingFrame = document.getElementById('loader');
-			  loadingFrame.style.display = 'none';
+			  loadingFrame.style.display = 'none';			  
 			});
-			//Full page
+			//Full page	
+			var gravity = true;		
 			var myFullpage = new fullpage('#fullpage', {
 				css3:true,
-				scrollingSpeed: 900,
+				scrollingSpeed: 1000,
 				easing: 'easeInOutCubic',
     			easingcss3: 'ease',
 				fitToSection: true,
@@ -803,6 +813,25 @@
 						document.querySelector('.white').style.display = 'block';
 						document.querySelector('.black').style.display = 'none';
 					}
+					//Animate texts for each section
+					if(nextIndex.anchor!=="footer") {
+						const section = nextIndex.item;					
+						if (section.querySelector('h1')) {
+							const title = section.querySelector('h1');	
+							const tl = new TimelineMax({ delay: 0.5 });					
+							tl.fromTo(title, 1, {y: "80", opacity: 0}, {y: 0, opacity: 1});
+						}
+						if (section.querySelector('h4')) {
+							const subtitle = section.querySelectorAll('h4');
+							const tl2 = new TimelineMax({ delay: 0.8 });
+							tl2.fromTo(subtitle, 1, {y: "80", opacity: 0}, {y: 0, opacity: 1});
+						}
+						if (section.querySelector('p')) {
+							const text = section.querySelectorAll('p');
+							const tl3 = new TimelineMax({ delay: 1 });
+							tl3.fromTo(text, 1.2, {y: "80", opacity: 0}, {y: 0, opacity: 1});
+						}
+					}										
 				}
 		  	});
 		</script>		
