@@ -43,6 +43,8 @@ main::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
 	z-index: 1;
+	top: 0;
+    left: 0;
 }
 .loader {
 	position: fixed; 
