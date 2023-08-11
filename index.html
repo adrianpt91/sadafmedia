@@ -206,9 +206,26 @@
 							</div>			
 						</div>
 					</div>
+				</div>
+				<!--ABOUT US SECTION COVER-->
+				<div class="section about-cover child" id="about_third">
+					<video autoplay muted loop plays-inline class="back-video" data-autoplay>
+						<source src="images/bay.mp4" type="video/mp4">
+					</video>
+					<div class="about-cover-wrapper">
+						<div class="about-cover-text">
+							<h1>OUR TEAM</h1>
+							<div class="text-wrapper">
+								<p>Our dynamic team of experts
+									at Sadaf Media, We take great pride
+									in our exceptional team.
+								</p>
+							</div>			
+						</div>
+					</div>
 				</div>	
 				<!--ABOUT US TEAM SECTION-->
-				<div class="section about-third child" id="about_third">
+				<div class="section about-third child">
 					<video autoplay muted loop plays-inline class="back-video" data-autoplay>
 						<source src="images/dessert_dark.mp4" type="video/mp4">
 					</video>
@@ -216,10 +233,10 @@
 						<div class="about-third-text">
 							<h1>OUR TEAM</h1>
 							<div class="text-wrapper">
-								<p>Our dynamic team of experts
+								<!--<p>Our dynamic team of experts
 									at Sadaf Media, We take great pride
 									in our exceptional team.
-								</p>
+								</p>-->
 							</div>			
 						</div>
 						<div class="wrapper">
@@ -301,10 +318,10 @@
 					</video>
 					<div class="team-text">
 						<h1>OUR TEAM</h1>
-						<h4>Our dynamic team of experts
+						<!--<h4>Our dynamic team of experts
 							at Sadaf Media, We take great pride
 							in our exceptional team.
-						</h4> 
+						</h4>-->
 					</div>
 					<div class="gallery-team animate">
 						<div class="gallery-container-team">
@@ -615,6 +632,12 @@
 		</div>
 
 		<footer class="footer">
+			<div class="discover">
+				SCROLL TO DISCOVER				
+			</div>	
+			<svg class="footer-line" width="1" height="76" viewBox="0 0 1 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<line x1="0.5" y1="2.18557e-08" x2="0.499997" y2="76" stroke="#FFFBFB"/>
+			</svg>		
 			<div class="mouse">
 				<img class="white_scroll" src="images/white_scroll.gif" alt="scroll white">
 				<img class="black_scroll" src="images/black_scroll.gif" alt="scroll black">
@@ -722,7 +745,7 @@
 				},
     			slidesNavPosition: 'bottom',
   				normalScrollElements: '.scrollable-content',
-				anchors: ['home', 'home-bottom', 'aboutus', 'aboutus', 'aboutus', 'services', 'work', 'blog', 'contactus', 'location', 'footer'],
+				anchors: ['home', 'home-bottom', 'aboutus', 'aboutus', 'aboutus', 'aboutus', 'services', 'work', 'blog', 'contactus', 'location', 'footer'],
 				menu: '#menu',
 				afterLoad: function(anchorLink, index){
 					//Variables
@@ -738,6 +761,14 @@
 					document.querySelectorAll('.main-menu-links a').forEach(function(link) {
 						link.classList.remove('active');
 					});	
+					if (index.index === 3) {
+						document.querySelector('.discover').style.display = 'block';
+						document.querySelector('.footer-line').style.display = 'block';
+					}else {
+						document.querySelector('.discover').style.display = 'none';
+						document.querySelector('.footer-line').style.display = 'none';
+					}
+					console.log(index.index)
 					if (index.anchor === 'home') {
 						scrollWhite.style.display = 'block';
 						scrollBlack.style.display = 'none';
