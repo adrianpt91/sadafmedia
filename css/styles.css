@@ -2963,6 +2963,9 @@ header .menu-icon .section-title {
 /*       MEDIA QUERIES -- 500px       */
 /* ********************************** */
 @media (max-width: 500px) {
+	#sadafSlider {
+		top: -1rem;
+	}
 	.footer {
 		margin-bottom: 1rem;
 	}
