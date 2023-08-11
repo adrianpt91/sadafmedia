@@ -68,8 +68,11 @@ main::-webkit-scrollbar {
 	z-index: -1;
  }
 .fp-bg{
-    background-size: cover;
-    background-position: center 60%;
+    position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	height: 100vh;
 }
 /*.content {
 	opacity: 0;
@@ -1239,13 +1242,12 @@ header .menu-icon .section-title {
 }
 .about-second .about-second-more a:hover, 
 .about-second .about-second-more a:focus{ 	
-	/*box-shadow: inset 350px 0 0 0 #fff;
-	color: #000;*/
-	background: transparent;
+	box-shadow: inset 350px 0 0 0 #fff;
+	color: #000;
 }
 .about-second .about-second-more a:hover svg path, 
 .about-second .about-second-more a:focus svg path{ 	
-	/*fill: #000;*/
+	fill: #000;
 }
 .about-second .about-second-more a span{
 	margin-left: 2rem;
@@ -2315,13 +2317,12 @@ header .menu-icon .section-title {
 }
 .contactus .contactus-text .contactus-more a:hover, 
 .contactus .contactus-text .contactus-more a:focus{ 	
-	/*box-shadow: inset 350px 0 0 0 #fff;
-	color: #000;*/
-	background: transparent;
+	box-shadow: inset 350px 0 0 0 #fff;
+	color: #000;
 }
 .contactus .contactus-text .contactus-more a:hover svg path, 
 .contactus .contactus-text .contactus-more a:focus svg path{ 	
-	/*fill: #000;*/
+	fill: #000;
 }
 .contactus .contactus-text .contactus-more a span{
 	margin-left: 2rem;
