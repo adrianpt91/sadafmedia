@@ -94,18 +94,8 @@ main::-webkit-scrollbar {
 	right: 0;
 	bottom: 0;
 	z-index: -1;
-}
-@media (min-aspect-ratio: 16/9){
-	.back-video {
-		width: 100%;
-		height: auto;
-	}
-}
-@media (max-aspect-ratio: 16/9){
-	.back-video {
-		width: auto;
-		height: 100%;
-	}
+	min-width: 100%;
+    min-height: 100%;
 }
 /*Parallax*/
 .section{
@@ -1289,8 +1279,8 @@ header .menu-icon .section-title {
 
 .about-third .about-third-text p{
 	font-weight: 400;
-	font-size: 32px;
-	line-height: 37px;
+	font-size: 48px;
+	line-height: 45px;
 	text-transform: inherit;
 }
 .about-third .about-third-button{
@@ -1657,8 +1647,8 @@ header .menu-icon .section-title {
 }
 .team .team-text h4{
 	font-weight: 400;
-	font-size: 32px;
-	line-height: 35px;
+	font-size: 48px;
+	line-height: 48px;
 	text-transform: inherit;
 	color: #fff;
 }
