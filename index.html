@@ -32,7 +32,7 @@
 						<path d="M145.445 64.6951V39.2277C145.445 28.1098 141.219 22.3374 129.705 22.0834V22.1748C133.818 22.7744 136.001 26.433 136.001 33.1606V39.2277V39.9899V60.935C135.397 65.2947 131.627 68.7703 127.643 68.7703C123.139 68.7703 120.066 65.7622 120.066 55.6301C120.066 46.2805 122.554 41.4634 131.181 40.2846L131.172 39.3903C119.573 40.1829 110.631 44.2378 110.631 56.0061C110.631 65.3862 115.088 69.7154 127.123 69.7154C132.834 69.7154 136.001 65.2947 136.001 63.9634V65.6402C136.001 67.9166 137.728 69.7154 139.808 69.7154H147.079C147.088 69.7154 145.445 67.7236 145.445 64.6951Z" fill="white"/>
 					</svg>
 					<svg class="black" width="174" height="71" viewBox="0 0 174 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M4.33278 43.9735C16.6277 43.9735 4.93638 68.6076 21.1315 68.6076C25.5517 68.6076 31.9591 65.0101 31.9591 57.4288C31.9591 37.9979 0.441878 34.3089 0.441878 16.5853C0.441878 7.86583 6.93291 1.90039 20.7879 1.90039C40.0102 1.90039 40.2702 19.6239 33.0828 19.6239C25.1988 19.6239 31.6991 2.75405 19.6642 2.75405C14.984 2.75405 10.7495 5.40648 10.7495 12.7947C10.7495 28.7195 42.0068 30.8943 42.0068 52.7845C42.0068 66.1483 29.1083 69.5629 20.4443 69.5629C-1.55465 69.5527 -3.81119 43.9735 4.33278 43.9735Z" fill="black"/>
+						<path class="logo-s" d="M4.33278 43.9735C16.6277 43.9735 4.93638 68.6076 21.1315 68.6076C25.5517 68.6076 31.9591 65.0101 31.9591 57.4288C31.9591 37.9979 0.441878 34.3089 0.441878 16.5853C0.441878 7.86583 6.93291 1.90039 20.7879 1.90039C40.0102 1.90039 40.2702 19.6239 33.0828 19.6239C25.1988 19.6239 31.6991 2.75405 19.6642 2.75405C14.984 2.75405 10.7495 5.40648 10.7495 12.7947C10.7495 28.7195 42.0068 30.8943 42.0068 52.7845C42.0068 66.1483 29.1083 69.5629 20.4443 69.5629C-1.55465 69.5527 -3.81119 43.9735 4.33278 43.9735Z" fill="black"/>
 						<path style="display: none;" d="M98.764 66.1076C96.331 68.5771 93.1644 70.0304 88.8463 70.0304C79.3187 70.0304 74.2949 60.0812 74.2949 46.0568C74.2949 31.0874 80.0988 22.1748 93.5173 22.1748C97.8446 22.1748 101.141 25.1118 101.485 26.25V7.47966C101.485 4.45121 99.8412 2.36788 99.8412 2.36788L111.012 0V64.7967C111.012 67.8251 112.573 69.817 112.573 69.817H105.301C103.221 69.817 101.494 68.0182 101.494 65.7418V62.4491V57.4288V31.5548C101.494 29.187 99.414 23.0284 93.443 23.0284C88.3356 23.0284 83.739 27.6727 83.739 43.1199C83.739 61.7885 87.0263 67.378 92.3101 67.378C94.4645 67.378 96.4517 66.4735 98.0304 65.0406L98.764 66.1076Z" fill="black"/>
 						<path style="display: none;" d="M146.16 39.3901H148.221V19.4105C148.221 8.03853 151.769 2.16455 161.556 2.16455C174.891 2.16455 176.451 18.6584 169.784 18.6584C162.94 18.6584 169.087 3.11983 160.34 3.11983C156.272 3.11983 153.849 6.34137 153.849 10.0406C153.849 16.5751 157.656 31.2092 157.656 39.4003H169.134V40.3047H157.702L157.656 64.8067C157.656 67.8352 159.3 69.8271 159.3 69.8271H146.568C146.568 69.8271 148.212 67.8352 148.212 64.8067L148.258 40.3047H146.15L146.16 39.3901Z" fill="black"/>
 						<path style="display: none;" d="M44.6446 2.15454L49.1391 12.2968L53.6336 2.15454H56.2709V15.2033H53.7636V7.67283L50.4299 15.2033H47.839L44.5053 7.67283V15.2033H41.998V2.15454H44.6446Z" fill="#4598BE"/>
@@ -742,6 +742,7 @@
 					const header = document.querySelector('header');
 					const scrollWhite = document.querySelector('.white_scroll');
 					const scrollBlack = document.querySelector('.black_scroll');
+					const logoS = document.querySelector('.logo-s');
 					const targetLinkId = 'a[href="#' + index.anchor + '"]';
 					document.querySelector('.contact-btn a').classList.remove('active')
 					document.querySelectorAll('.main-menu-links a').forEach(function(link) {
@@ -750,6 +751,7 @@
 					if (index.anchor === 'home') {
 						scrollWhite.style.display = 'block';
 						scrollBlack.style.display = 'none';
+						logoS.style.fill = 'white';
 						mouse.style.display = 'flex';
 						mouse.classList.remove('mouseActive');
 						menuIcon.classList.add('active');
@@ -763,7 +765,8 @@
 						if (index.anchor === 'home-bottom') {
 							sectionTitleDiv.textContent = 'HOME';
 							sectionTitleDiv.style.color = 'black'	
-							document.querySelector('.home-link').classList.add('active');						
+							document.querySelector('.home-link').classList.add('active');	
+							logoS.style.fill = 'black';					
 						}else {
 							if (document.querySelector(targetLinkId)) {
 								document.querySelector(targetLinkId).classList.add('active');
@@ -775,10 +778,12 @@
 							scrollWhite.style.display = 'block';
 							scrollBlack.style.display = 'none';
 							menuIcon.classList.add('active');
+							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'services') {
 							sectionTitleDiv.textContent = 'SERVICES';
 							sectionTitleDiv.style.color = 'black';
+							logoS.style.fill = 'black';
 						}
 						if (index.anchor === 'work') {
 							sectionTitleDiv.textContent = 'WORK';
@@ -786,6 +791,7 @@
 							scrollWhite.style.display = 'block';
 							scrollBlack.style.display = 'none';
 							menuIcon.classList.add('active');
+							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'blog') {
 							sectionTitleDiv.textContent = 'BLOG';
@@ -793,6 +799,7 @@
 							scrollWhite.style.display = 'block';
 							scrollBlack.style.display = 'none';
 							menuIcon.classList.add('active');
+							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'contactus') {
 							sectionTitleDiv.textContent = 'CONTACT US';
@@ -801,6 +808,7 @@
 							scrollWhite.style.display = 'block';
 							scrollBlack.style.display = 'none';
 							menuIcon.classList.add('active');
+							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'location') {
 							sectionTitleDiv.textContent = 'CONTACT US';
@@ -808,6 +816,7 @@
 							document.querySelector('.contact-btn a').classList.add('active')
 							scrollWhite.style.display = 'none';
 							scrollBlack.style.display = 'block';
+							logoS.style.fill = 'black';
 						}
 						if (index.anchor === 'footer') {
 							sectionTitleDiv.textContent = '';
