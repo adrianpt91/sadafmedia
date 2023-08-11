@@ -768,7 +768,6 @@
 						document.querySelector('.discover').style.display = 'none';
 						document.querySelector('.footer-line').style.display = 'none';
 					}
-					console.log(index.index)
 					if (index.anchor === 'home') {
 						scrollWhite.style.display = 'block';
 						scrollBlack.style.display = 'none';
@@ -839,11 +838,12 @@
 						}
 						if (index.anchor === 'location') {
 							sectionTitleDiv.textContent = 'CONTACT US';
-							sectionTitleDiv.style.color = 'black'
+							sectionTitleDiv.style.color = 'white'
 							document.querySelector('.contact-btn a').classList.add('active')
-							scrollWhite.style.display = 'none';
-							scrollBlack.style.display = 'block';
-							logoS.style.fill = 'black';
+							scrollWhite.style.display = 'block';
+							scrollBlack.style.display = 'none';
+							menuIcon.classList.add('active');
+							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'footer') {
 							sectionTitleDiv.textContent = '';
