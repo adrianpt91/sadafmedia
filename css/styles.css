@@ -2714,6 +2714,19 @@ header .menu-icon .section-title {
 	.about-second .about-second-more a span svg{
 		width: 30px;
 	}
+	/*ABOUT COVER*/	
+	.about-cover .about-cover-text{
+		padding: 10rem 35rem 4rem;
+	}
+	.about-cover .about-cover-text h1{
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.about-cover .about-cover-text p{
+		font-size: 24px;
+		line-height: 30px;
+	}
 	/*ABOUT THIRD*/	
 	.about-third .about-third-text{
 		padding: 10rem 35rem 4rem;
@@ -3253,6 +3266,21 @@ header .menu-icon .section-title {
 		line-height: normal;
 		padding: 1rem 0rem;
 		width: 250px;
+	}
+	/*  ABOUT COVER  */
+	.about-cover .about-cover-text{
+		padding: 15rem 2rem 0rem;
+		row-gap: 2rem;
+		justify-content: start;
+	}
+	.about-cover .about-cover-text h1{
+		font-size: 38px;
+    	line-height: 38px;
+	}
+
+	.about-cover .about-cover-text p{
+		font-size: 24px;
+    	line-height: normal;
 	}
 	/*  ABOUT THIRD  */
 	.about-third .about-third-text{
