@@ -61,7 +61,12 @@ main::-webkit-scrollbar {
 .loader img{
 	width: 600px;
 }
-
+.parallax-bg {
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+ }
 /*.content {
 	opacity: 0;
 	transform: translateY(50px); 
