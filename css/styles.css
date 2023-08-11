@@ -1529,6 +1529,7 @@ header .menu-icon .section-title {
     align-items: start;
 	border: 1px solid #000;
     border-radius: 50%;
+	background: #fff;
 }
 .services .services-text .services-more .service:hover{ 
 	transform: scale(1.2) !important;
@@ -1554,7 +1555,7 @@ header .menu-icon .section-title {
 }
 .service.second .service-text{
 	position: absolute;
-    bottom: 4rem;
+    bottom: 2rem;
     width: 110px;
     font-size: 16px;
     font-weight: 800;
@@ -1566,7 +1567,7 @@ header .menu-icon .section-title {
 }
 .service.three .service-text{
 	position: absolute;
-    bottom: 3rem;
+    bottom: 2rem;
     width: 110px;
     font-size: 16px;
     font-weight: 800;
@@ -1578,7 +1579,7 @@ header .menu-icon .section-title {
 }
 .service.four .service-text{
 	position: absolute;
-    bottom: 4rem;
+    bottom: 3rem;
     width: 200px;
     font-size: 16px;
     font-weight: 800;
