@@ -1078,6 +1078,7 @@ header .menu-icon .section-title {
     justify-content: start;
     text-align: center;
 	row-gap: 2rem;
+	color: #fff;
 }
 .about-second .about-second-text h1{
 	font-weight: 700;
@@ -1253,7 +1254,7 @@ header .menu-icon .section-title {
 /*               ABOUT THIRD          */
 /* ********************************** */
 .about-third {
-	background: #70E1CC; 
+	/* background: #07184A;  */
     height: 100vh;
 	/* background-image: url('../images/about/third_back.png');*/
 	background-position: center;
@@ -1275,6 +1276,7 @@ header .menu-icon .section-title {
     justify-content: start;
     text-align: center;
 	row-gap: 2rem;
+	color: #fff;
 }
 .about-third .about-third-text h1{
 	font-weight: 700;
@@ -1329,7 +1331,7 @@ header .menu-icon .section-title {
 	right: 18rem;
   }
 .about-third .next-button, .about-third .back-button {
-	border: 1px solid #000;
+	border: 1px solid #fff;
 	border-radius: 100%;
 	padding: 3rem 2rem;
 	position: absolute;
@@ -1625,7 +1627,7 @@ header .menu-icon .section-title {
 /*               TEAM                 */
 /* ********************************** */
 .team {
-	background: #70E1CC; 
+	/* background: #07184A;  */
     height: 100vh;
 	/* background-image: url('../images/about/third_back.png');*/
 	background-position: center;
@@ -1646,14 +1648,14 @@ header .menu-icon .section-title {
 	font-size: 62px;
 	line-height: 72px;
 	text-transform: uppercase;
-	color: #000;
+	color: #fff;
 }
 .team .team-text h4{
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 35px;
 	text-transform: inherit;
-	color: #000;
+	color: #fff;
 }
 
 /*Carousel Slider 3D*/
@@ -1749,7 +1751,7 @@ header .menu-icon .section-title {
   }
   
 .team .next-button, .team .back-button {
-	border: 1px solid #000;
+	border: 1px solid #fff;
 	border-radius: 100%;
 	padding: 3rem 2rem;
 	position: absolute;
@@ -1771,7 +1773,7 @@ header .menu-icon .section-title {
 /*               WORK                 */
 /* ********************************** */
 .work {
-	background: #FB6C26;
+	background: #07184A;
     height: 100vh;
 	/* background-image: url('../images/work_back.png');
 	background-position: center;
@@ -2039,7 +2041,7 @@ header .menu-icon .section-title {
 /*               BLOG                 */
 /* ********************************** */
 .blog {
-	background: #FFD601;
+	background: #07184A;
     height: 100vh;
 	overflow: hidden;
 }
@@ -2052,20 +2054,21 @@ header .menu-icon .section-title {
     justify-content: center;
     text-align: center;
 	row-gap: 2rem;
+	color: #fff;
 }
 .blog .blog-text h1{
 	font-weight: 700;
 	font-size: 62px;
 	line-height: 72px;
 	text-transform: uppercase;
-	color: #000;
+	color: #fff;
 }
 .blog .blog-text h4{
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 35px;
 	text-transform: uppercase;
-	color: #000;
+	color: #fff;
 }
 .blog .blog-text .blog-filter {
 	display: flex;
@@ -2078,7 +2081,7 @@ header .menu-icon .section-title {
 	align-items: center;
 }
 .blog .blog-text .blog-filter a li {
-	color: #000;
+	color: #fff;
     cursor: pointer;
     list-style-type: none;
     line-height: 22px;
@@ -2169,7 +2172,7 @@ header .menu-icon .section-title {
 }
 
 .blog .gallerry-wrapper .blog-button a{
-	border: 1px solid #000;
+	border: 1px solid #fff;
     border-radius: 100%;
     padding: 4rem 3rem;
 }
