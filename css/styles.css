@@ -67,6 +67,10 @@ main::-webkit-scrollbar {
 	width: 100%;
 	z-index: -1;
  }
+.fp-bg{
+    background-size: cover;
+    background-position: center 60%;
+}
 /*.content {
 	opacity: 0;
 	transform: translateY(50px); 
@@ -3212,14 +3216,14 @@ header .menu-icon .section-title {
 		margin-left: 20px;
 	}
 	.about-third .carousel .team-item .team-more {
-		bottom: 2rem;
+		bottom: 4rem;
 		padding-right: 0.5rem;
 		padding-left: 0.5rem;
 		color: #fff;
-		font-size: 8px;
+		font-size: 15px;
 	}
 	.about-third .carousel .team-item .team-more .position{
-		font-size: 8px;
+		font-size: 15px;
 	}
 	.about-third .carousel__control svg {
 		width: 30px;
