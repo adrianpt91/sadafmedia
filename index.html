@@ -131,17 +131,15 @@
 					</div>
 				</div>
 				<canvas id="particleCanvas" style="position: absolute;"></canvas>								
-				<video autoplay muted loop class="video-home">
+				<!--<video autoplay muted loop class="video-home">
 					<source src="images/beach.mp4" type="video/mp4">
-				</video>
+				</video>-->
 			</div>
 			<!--HOME SECTION-->		
 			<div class="section home-bottom child">
-				<!--<div class="video-wrapper">
-					<video autoplay muted loop plays-inline class="home-video" data-autoplay>
-						<source src="images/dessert.mp4" type="video/mp4">
-					</video>
-				</div>-->			
+				<video autoplay muted loop plays-inline class="back-video" data-autoplay>
+					<source src="images/beach.mp4" type="video/mp4">
+				</video>			
 				<div class="home-bottom-text" data-card3d=""  data-card3d-full-page-listening="true" data-card3d-no-reset="true" data-card3d-delta="3">
 					<h1 id="parallax-text">
 						Unlock Your Digital Potential
@@ -756,9 +754,12 @@
 						menuIcon.classList.remove('active');
 						if (index.anchor === 'home-bottom') {
 							sectionTitleDiv.textContent = 'HOME';
-							sectionTitleDiv.style.color = 'black'	
+							sectionTitleDiv.style.color = 'white'
+							scrollWhite.style.display = 'block';
+							scrollBlack.style.display = 'none';
+							menuIcon.classList.add('active');
+							logoS.style.fill = 'white';	
 							document.querySelector('.home-link').classList.add('active');	
-							logoS.style.fill = 'black';					
 						}else {
 							if (document.querySelector(targetLinkId)) {
 								document.querySelector(targetLinkId).classList.add('active');
@@ -774,8 +775,11 @@
 						}
 						if (index.anchor === 'services') {
 							sectionTitleDiv.textContent = 'SERVICES';
-							sectionTitleDiv.style.color = 'black';
-							logoS.style.fill = 'black';
+							sectionTitleDiv.style.color = 'white'
+							scrollWhite.style.display = 'block';
+							scrollBlack.style.display = 'none';
+							menuIcon.classList.add('active');
+							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'work') {
 							sectionTitleDiv.textContent = 'WORK';

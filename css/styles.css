@@ -460,6 +460,7 @@ header .menu-icon .section-title {
 	overflow: hidden;
 	height: 100vh;
 	position: relative;
+	background: #000;
 }
 
 .home::before {
@@ -608,13 +609,23 @@ header .menu-icon .section-title {
 /*               HOME BOTTOM          */
 /* ********************************** */
 .home-bottom {
-	background: #fff;
+	/* background: #fff; */
     height: 100vh;
 	/*background-image: url('../images/home2_back.png');*/
 	/* background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
 	overflow: hidden;
+}
+.home-bottom::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value for darkness */
+	z-index: 0;
 }
 .home-bottom .video-wrapper{
 	position: absolute;
@@ -654,6 +665,7 @@ header .menu-icon .section-title {
     text-align: center;
 	row-gap: 2rem;
 	position: relative;
+	color: #fff;
 }
 .home-bottom .home-bottom-text h1{
 	font-weight: 800;
@@ -678,7 +690,7 @@ header .menu-icon .section-title {
 }
 
 .home-bottom .home-bottom-text .home-bottom-button a{
-	border: 1px solid #000;
+	border: 1px solid #fff;
     border-radius: 100%;
     padding: 3rem 4.25rem;
 }
@@ -785,7 +797,7 @@ header .menu-icon .section-title {
 	font-weight: 700;
     font-size: 32px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     background: transparent;
 	line-height: 35px;
 	text-transform: uppercase;
@@ -793,11 +805,11 @@ header .menu-icon .section-title {
     border-radius: 50px;
 	width: 350px;
 	transition: 0.25s;
-	border: 0.25rem solid #000;
+	border: 0.25rem solid #fff;
 }
 .home-bottom .home-bottom-text .discover-more a:hover{ 	
-	box-shadow: inset 350px 0 0 0 #000;
-	color: #fff;
+	box-shadow: inset 350px 0 0 0 #fff;
+	color: #000;
 }
 @-webkit-keyframes move {
     0% { transform: translateY(0); }
@@ -1420,7 +1432,7 @@ header .menu-icon .section-title {
 /*               SERVICES             */
 /* ********************************** */
 .services {
-	background: #FFF; 
+	background: #07184A; 
     height: 100vh;
 	/* background-image: url('../images/services_back.png');*/
 	background-position: center;
@@ -1447,13 +1459,14 @@ header .menu-icon .section-title {
 	font-size: 62px;
 	line-height: 72px;
 	text-transform: uppercase;
-	color: #000;
+	color: #fff;
 }
 .services .services-text h4{
 	font-weight: 400;
 	font-size: 32px;
 	line-height: 35px;
 	text-transform: uppercase;
+	color: #fff;
 }
 
 .services .services-text p{
@@ -1461,6 +1474,7 @@ header .menu-icon .section-title {
 	font-size: 15px;
 	line-height: 17px;
 	text-transform: inherit;
+	color: #fff;
 }
 .services .services-text .text-wrapper {
 	display: flex;
@@ -1769,7 +1783,7 @@ header .menu-icon .section-title {
 /*               WORK                 */
 /* ********************************** */
 .work {
-	background: #07184A;
+	background: #000;
     height: 100vh;
 	/* background-image: url('../images/work_back.png');
 	background-position: center;
