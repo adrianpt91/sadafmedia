@@ -770,19 +770,27 @@
 						}
 						if (index.anchor === 'aboutus' || index.anchor === 'team' || index.anchor === 'about-second') {
 							sectionTitleDiv.textContent = 'ABOUT US';
+							scrollWhite.style.display = 'block';
+							scrollBlack.style.display = 'none';
 						}
 						if (index.anchor === 'services') {
 							sectionTitleDiv.textContent = 'SERVICES';
 						}
 						if (index.anchor === 'work') {
 							sectionTitleDiv.textContent = 'WORK';
+							scrollWhite.style.display = 'block';
+							scrollBlack.style.display = 'none';
 						}
 						if (index.anchor === 'blog') {
 							sectionTitleDiv.textContent = 'BLOG';
+							scrollWhite.style.display = 'block';
+							scrollBlack.style.display = 'none';
 						}
 						if (index.anchor === 'contactus' || index.anchor === 'location') {
 							sectionTitleDiv.textContent = 'CONTACT US';
 							document.querySelector('.contact-btn a').classList.add('active')
+							scrollWhite.style.display = 'block';
+							scrollBlack.style.display = 'none';
 						}
 						if (index.anchor === 'footer') {
 							sectionTitleDiv.textContent = '';

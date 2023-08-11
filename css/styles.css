@@ -1535,6 +1535,8 @@ header .menu-icon .section-title {
     position: relative;
     justify-content: center;
     align-items: start;
+	border: 1px solid #000;
+    border-radius: 50%;
 }
 .services .services-text .services-more .service:hover{ 
 	transform: scale(1.2) !important;
@@ -1616,6 +1618,7 @@ header .menu-icon .section-title {
 
 .services .services-text .services-more .service .circle{
 	width: 150px;
+	visibility: hidden;
 }
 
 .services .services-text .service-wrapper {
