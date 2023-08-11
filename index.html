@@ -761,7 +761,8 @@
 						mouse.classList.add('mouseActive');
 						menuIcon.classList.remove('active');
 						if (index.anchor === 'home-bottom') {
-							sectionTitleDiv.textContent = 'HOME';	
+							sectionTitleDiv.textContent = 'HOME';
+							sectionTitleDiv.style.color = 'black'	
 							document.querySelector('.home-link').classList.add('active');						
 						}else {
 							if (document.querySelector(targetLinkId)) {
@@ -770,27 +771,43 @@
 						}
 						if (index.anchor === 'aboutus' || index.anchor === 'team' || index.anchor === 'about-second') {
 							sectionTitleDiv.textContent = 'ABOUT US';
+							sectionTitleDiv.style.color = 'white';
 							scrollWhite.style.display = 'block';
 							scrollBlack.style.display = 'none';
+							menuIcon.classList.add('active');
 						}
 						if (index.anchor === 'services') {
 							sectionTitleDiv.textContent = 'SERVICES';
+							sectionTitleDiv.style.color = 'black';
 						}
 						if (index.anchor === 'work') {
 							sectionTitleDiv.textContent = 'WORK';
+							sectionTitleDiv.style.color = 'white'
 							scrollWhite.style.display = 'block';
 							scrollBlack.style.display = 'none';
+							menuIcon.classList.add('active');
 						}
 						if (index.anchor === 'blog') {
 							sectionTitleDiv.textContent = 'BLOG';
+							sectionTitleDiv.style.color = 'white'
 							scrollWhite.style.display = 'block';
 							scrollBlack.style.display = 'none';
+							menuIcon.classList.add('active');
 						}
-						if (index.anchor === 'contactus' || index.anchor === 'location') {
+						if (index.anchor === 'contactus') {
 							sectionTitleDiv.textContent = 'CONTACT US';
+							sectionTitleDiv.style.color = 'white'
 							document.querySelector('.contact-btn a').classList.add('active')
 							scrollWhite.style.display = 'block';
 							scrollBlack.style.display = 'none';
+							menuIcon.classList.add('active');
+						}
+						if (index.anchor === 'location') {
+							sectionTitleDiv.textContent = 'CONTACT US';
+							sectionTitleDiv.style.color = 'black'
+							document.querySelector('.contact-btn a').classList.add('active')
+							scrollWhite.style.display = 'none';
+							scrollBlack.style.display = 'block';
 						}
 						if (index.anchor === 'footer') {
 							sectionTitleDiv.textContent = '';

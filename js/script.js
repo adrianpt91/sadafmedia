@@ -4,6 +4,7 @@ const main = document.querySelector('main');
 const logoWhite = document.querySelector('.white');
 const logoBlack = document.querySelector('.black');
 const mouseScroll = document.querySelector('.mouse');
+const sectionTitleDiv2 = document.querySelector('.section-title');
 
 menuIcon.addEventListener('click', function() {
 	menuIcon.classList.toggle('rotate');
@@ -13,9 +14,11 @@ menuIcon.addEventListener('click', function() {
     if (menu.classList.contains('show')) {
       logoWhite.style.display = 'block';
       logoBlack.style.display = 'none'; 
+      sectionTitleDiv2.style.display = 'none';
     }else {
       logoWhite.style.display = 'none'; 
       logoBlack.style.display = 'block';
+      sectionTitleDiv2.style.display = 'block';
     }		
 	} 
 });
