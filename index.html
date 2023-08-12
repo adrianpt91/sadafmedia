@@ -722,8 +722,7 @@
 			  var loadingFrame = document.getElementById('loader');
 			  loadingFrame.style.display = 'none';			  
 			});
-			//Full page	
-			var gravity = true;		
+			//Full page		
 			var myFullpage = new fullpage('#fullpage', {
 				css3:true,
 				scrollingSpeed: 1000,
@@ -731,11 +730,7 @@
     			easingcss3: 'ease',
 				fitToSection: true,
     			fitToSectionDelay: 1000,
-				verticalCentered: true,
-    			scrollHorizontally: true,
-				slidesNavigation: true,
-				loopHorizontal: true,
-				continuousHorizontal: true,
+				verticalCentered: true,    			
 				dragAndMove: true,
 				parallax: true, 
 				parallaxOptions: {
@@ -743,7 +738,6 @@
 					percentage: 62,
 					property: 'translate'
 				},
-    			slidesNavPosition: 'bottom',
   				normalScrollElements: '.scrollable-content',
 				anchors: ['home', 'home-bottom', 'aboutus', 'aboutus', 'aboutus', 'aboutus', 'services', 'work', 'blog', 'contactus', 'location', 'footer'],
 				menu: '#menu',
