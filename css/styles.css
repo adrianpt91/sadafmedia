@@ -117,6 +117,10 @@ main::-webkit-scrollbar {
   	background-position: center center;
 	overflow: hidden;
 }
+
+.hidden {
+	display: none;
+}
 /* ********************************** */
 /*               MODAL               */
 /* ********************************** */
@@ -2462,20 +2466,6 @@ header .menu-icon .section-title {
 .footer .white_scroll {
 	display: block;
 }
-.footer .discover {
-	position: absolute;
-    top: -11rem;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: #fff;
-	display: none;
-}
-.footer .footer-line {
-	position: absolute;
-    top: -8rem;
-}
 /*
 .footer .mouseActive{
 	border: 3px solid #000;
@@ -2966,8 +2956,8 @@ header .menu-icon .section-title {
 /*       MEDIA QUERIES -- 500px       */
 /* ********************************** */
 @media (max-width: 500px) {
-	#sadafSlider {
-		top: -1rem;
+	#particleCanvas {
+		display: none;
 	}
 	.footer {
 		margin-bottom: 1rem;
@@ -2992,6 +2982,7 @@ header .menu-icon .section-title {
 	header .menu-icon .section-title {
 		font-size: 22px;
 		padding: 0 1rem;
+		color: #fff;
 	}
 
 	header .menu-icon svg {
