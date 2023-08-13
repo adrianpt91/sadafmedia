@@ -1147,12 +1147,12 @@ header .menu-icon .section-title {
     font-size: 32px;
     text-decoration: none;
     color: #fff;
-    background: #000;
+    background: transparent;
 	line-height: 35px;
 	text-transform: uppercase;
 	padding: 2rem 3rem;
     border-radius: 50px;
-	border: 0.25rem solid #000;
+	border: 0.25rem solid #fff;
 	width: 350px;
 	transition: 0.25s;
 }
@@ -2280,12 +2280,12 @@ header .menu-icon .section-title {
     font-size: 32px;
     text-decoration: none;
     color: #fff;
-    background: #000;
+    background: transparent;
 	line-height: 35px;
 	text-transform: uppercase;
 	padding: 2rem 3rem;
     border-radius: 50px;
-	border: 0.25rem solid #000;
+	border: 0.25rem solid #fff;
 	width: 350px;
 	transition: 0.25s;
 }
@@ -2987,6 +2987,45 @@ header .menu-icon .section-title {
 
 	header .menu-icon svg {
 		width: 28px;
+	}
+
+	/*Modal*/
+	.modal-content .modal-form {
+		padding: 12rem 2rem 2rem 2rem;
+	}
+	.modal-content .modal-form h1 {
+		font-size: 28px;
+	}
+	.contact-form .form-box input {
+		padding: 1rem 0;
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+	.contact-form .form-box label {
+		padding: 0.75rem 0;
+		font-size: 20px;
+	}
+	.contact-form .form-box input:focus ~ label, .contact-form .form-box input:valid ~ label {
+		font-size: 18px;
+	}
+	.contact-form textarea {
+		font-size: 20px;
+	}
+	.close svg {
+		width: 24px;
+    	height: 24px;
+	}
+	.modal-content .modal-form .modal-more a {
+		font-size: 28px;
+		padding: 1.5rem 2rem;
+		width: 250px;
+		line-height: normal;
+	}
+	.modal-content .modal-form .modal-more a span {
+		margin-left: 1rem;
+	}
+	.modal-content .modal-form .modal-more a span svg{
+		width: 40px;
 	}
 
 	/*Menu*/
