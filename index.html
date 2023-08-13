@@ -75,7 +75,7 @@
 				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 					<style type="text/css">
-						.st0{fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;}
+						.st0{fill:none;stroke:#fff;stroke-width:20;stroke-miterlimit:10;}
 					</style>
 					<g>
 						<line class="st0" x1="250.4" y1="50.7" x2="250.4" y2="449"/>
@@ -640,7 +640,7 @@
 			</svg>		
 			<div class="mouse">
 				<img class="white_scroll" src="images/white_scroll.gif" alt="scroll white">
-				<img class="black_scroll" src="images/black_scroll.gif" alt="scroll black">
+				<!--<img class="black_scroll" src="images/black_scroll.gif" alt="scroll black">-->
 			</div>
 		</footer>
 		
@@ -654,7 +654,7 @@
 				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 					<style type="text/css">
-						.st0{fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;}
+						.st0{fill:none;stroke:#fff;stroke-width:20;stroke-miterlimit:10;}
 					</style>
 					<g>
 						<line class="st0" x1="250.4" y1="50.7" x2="250.4" y2="449"/>
@@ -706,14 +706,14 @@
 			  </div>
 			</div>
 		</div>
-		
+				
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
 			crossorigin="anonymous" referrerpolicy="no-referrer">
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
 			crossorigin="anonymous" referrerpolicy="no-referrer">
 		</script>
-		<script src="js/card3d.js"></script>
+		<script src="js/card3d.js"></script>		
 		<script type="text/javascript" src="js/fullpage.parallax.min.js"></script>
 		<script type="text/javascript" src="js/fullpage.js"></script>
 		<script>
@@ -744,11 +744,9 @@
 				afterLoad: function(anchorLink, index){
 					//Variables
 					const mouse = document.querySelector('.mouse');
-					const menuIcon = document.querySelector('.menu-icon svg');
 					const sectionTitleDiv = document.querySelector('.section-title');
 					const header = document.querySelector('header');
 					const scrollWhite = document.querySelector('.white_scroll');
-					const scrollBlack = document.querySelector('.black_scroll');
 					const logoS = document.querySelector('.logo-s');
 					const targetLinkId = 'a[href="#' + index.anchor + '"]';
 					document.querySelector('.contact-btn a').classList.remove('active')
@@ -763,25 +761,16 @@
 						document.querySelector('.footer-line').style.display = 'none';
 					}
 					if (index.anchor === 'home') {
-						scrollWhite.style.display = 'block';
-						scrollBlack.style.display = 'none';
 						logoS.style.fill = 'white';
 						mouse.style.display = 'flex';
 						mouse.classList.remove('mouseActive');
-						menuIcon.classList.add('active');
 						sectionTitleDiv.innerHTML = '';
 						document.querySelector('.home-link').classList.add('active');
 					}else {
-						scrollWhite.style.display = 'none';
-						scrollBlack.style.display = 'block';
 						mouse.classList.add('mouseActive');
-						menuIcon.classList.remove('active');
 						if (index.anchor === 'home-bottom') {
 							sectionTitleDiv.textContent = 'HOME';
-							sectionTitleDiv.style.color = 'white'
-							scrollWhite.style.display = 'block';
-							scrollBlack.style.display = 'none';
-							menuIcon.classList.add('active');
+							sectionTitleDiv.style.color = 'white';
 							logoS.style.fill = 'white';	
 							document.querySelector('.home-link').classList.add('active');	
 						}else {
@@ -792,51 +781,33 @@
 						if (index.anchor === 'aboutus' || index.anchor === 'team' || index.anchor === 'about-second') {
 							sectionTitleDiv.textContent = 'ABOUT US';
 							sectionTitleDiv.style.color = 'white';
-							scrollWhite.style.display = 'block';
-							scrollBlack.style.display = 'none';
-							menuIcon.classList.add('active');
 							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'services') {
 							sectionTitleDiv.textContent = 'SERVICES';
-							sectionTitleDiv.style.color = 'white'
-							scrollWhite.style.display = 'block';
-							scrollBlack.style.display = 'none';
-							menuIcon.classList.add('active');
+							sectionTitleDiv.style.color = 'white';
 							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'work') {
 							sectionTitleDiv.textContent = 'WORK';
-							sectionTitleDiv.style.color = 'white'
-							scrollWhite.style.display = 'block';
-							scrollBlack.style.display = 'none';
-							menuIcon.classList.add('active');
+							sectionTitleDiv.style.color = 'white';
 							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'blog') {
 							sectionTitleDiv.textContent = 'BLOG';
-							sectionTitleDiv.style.color = 'white'
-							scrollWhite.style.display = 'block';
-							scrollBlack.style.display = 'none';
-							menuIcon.classList.add('active');
+							sectionTitleDiv.style.color = 'white';
 							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'contactus') {
 							sectionTitleDiv.textContent = 'CONTACT US';
 							sectionTitleDiv.style.color = 'white'
-							document.querySelector('.contact-btn a').classList.add('active')
-							scrollWhite.style.display = 'block';
-							scrollBlack.style.display = 'none';
-							menuIcon.classList.add('active');
+							document.querySelector('.contact-btn a').classList.add('active');
 							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'location') {
 							sectionTitleDiv.textContent = 'CONTACT US';
 							sectionTitleDiv.style.color = 'white'
-							document.querySelector('.contact-btn a').classList.add('active')
-							scrollWhite.style.display = 'block';
-							scrollBlack.style.display = 'none';
-							menuIcon.classList.add('active');
+							document.querySelector('.contact-btn a').classList.add('active');
 							logoS.style.fill = 'white';
 						}
 						if (index.anchor === 'footer') {
@@ -844,7 +815,6 @@
 							logoWhite.style.display = 'none';
 							logoBlack.style.display = 'none';
 							scrollWhite.style.display = 'none';
-							scrollBlack.style.display = 'none';
 							document.querySelector('.menu-desktop').style.display = 'none'
 						}else {
 							document.querySelector('.menu-desktop').style.display = 'flex'
@@ -899,7 +869,7 @@
 								);
 							});
 						}
-					}															
+					}
 				}
 		  	});
 		</script>		
