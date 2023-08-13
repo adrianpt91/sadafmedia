@@ -2513,6 +2513,51 @@ header .menu-icon .section-title {
 		font-size: 40px;
 	}
 
+	/*Modal*/
+	.modal-content .modal-form {
+		padding: 10rem 10rem 0rem 10rem;
+	}
+	.modal-content .modal-form h1 {
+		font-size: 40px;
+	}
+	.contact-form .form-box input {
+		padding: 1rem 0;
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+	.contact-form .form-box label {
+		padding: 0.75rem 0;
+		font-size: 24px;
+	}
+	.contact-form .form-box input:focus ~ label, .contact-form .form-box input:valid ~ label {
+		font-size: 20px;
+	}
+	.contact-form textarea {
+		font-size: 24px;
+	}
+	.close svg {
+		width: 24px;
+    	height: 24px;
+	}
+	.modal-content .modal-form .modal-more a {
+		font-size: 28px;
+		padding: 1.5rem 2rem;
+		width: 250px;
+		line-height: normal;
+	}
+	.modal-content .modal-form .modal-more a span {
+		margin-left: 1rem;
+	}
+	.modal-content .modal-form .modal-more a span svg{
+		width: 40px;
+	}
+	.modal-content .modal-form .back-button a {
+		padding: 2rem 2rem;
+	}
+	.modal-content .modal-form .modal-more {
+		padding: 0;
+	}
+
 	/*HOME*/
 	.home-bottom .home-bottom-text h1{
 		font-size: 40px;
