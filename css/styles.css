@@ -3487,7 +3487,7 @@ header .menu-icon .section-title {
 		row-gap: 2rem;
 	}
 	.home-bottom .home-bottom-text h1{
-		font-size: 42px;
+		font-size: 32px;
     	line-height: 42px;
 	}
 	
@@ -3498,7 +3498,7 @@ header .menu-icon .section-title {
 		display: none;
 	}
 	.home-bottom .home-bottom-text p{
-		font-size: 18px;
+		font-size: 24px;
 		line-height: normal;
 		padding: 2rem;
 	}
@@ -3560,14 +3560,14 @@ header .menu-icon .section-title {
 	/* ABOUT SECOND   */
 	.about-second .about-second-text{
 		padding: 0 2rem;
-		row-gap: 2rem;
+		row-gap: 1rem;
 	}
 	.about-second .about-second-text h1{
-		font-size: 38px;
+		font-size: 32px;
     	line-height: 38px;
 	}
 	.about-second .about-second-text h4{
-		font-size: 30px;
+		font-size: 24px;
     	line-height: normal;
 		padding: 0;
 	}
@@ -3606,9 +3606,10 @@ header .menu-icon .section-title {
 		padding: 0rem 2rem;
 		row-gap: 2rem;
 		justify-content: center;
+		margin-bottom: 2rem;
 	}
 	.about-cover .about-cover-text h1{
-		font-size: 38px;
+		font-size: 32px;
     	line-height: 38px;
 	}
 
@@ -3624,7 +3625,7 @@ header .menu-icon .section-title {
 		align-items: center;
 	}
 	.about-third .about-third-text h1{
-		font-size: 38px;
+		font-size: 32px;
     	line-height: 38px;
 	}
 
@@ -3689,7 +3690,7 @@ header .menu-icon .section-title {
 	/*SERVICES*/
 	.services .services-text{
 		padding: 0 2rem;
-		row-gap: 2rem;
+		row-gap: 1rem;
 	}
 	.services .services-text .text-wrapper {
 		row-gap: 0.5rem;
@@ -3709,11 +3710,11 @@ header .menu-icon .section-title {
 		margin-top: 0rem;
 	}
 	.services .services-text h1{
-		font-size: 38px;
+		font-size: 32px;
     	line-height: 38px;
 	}
 	.services .services-text h4{
-		font-size: 30px;
+		font-size: 24px;
     	line-height: normal;
 	}
 	
@@ -3777,13 +3778,15 @@ header .menu-icon .section-title {
 	/*WORK*/
 	.work .work-text{
 		padding: 0 2rem;
+		row-gap: 1rem;
+		margin-bottom: 2rem;
 	}
 	.work .work-text h1{
-		font-size: 38px;
+		font-size: 32px;
     	line-height: 38px;
 	}
 	.work .work-text h4{
-		font-size: 30px;
+		font-size: 24px;
 		line-height: normal;
 	}
 	.work .work-text .work-filter a li {
@@ -3880,13 +3883,15 @@ header .menu-icon .section-title {
 	/*BLOG*/
 	.blog .blog-text{
 		padding: 0 2rem;
+		row-gap: 1rem;
+		margin-bottom: 1rem;
 	}
 	.blog .blog-text h1{
-		font-size: 39px;
+		font-size: 32px;
     	line-height: 38px;
 	}
 	.blog .blog-text h4{
-		font-size: 28px;
+		font-size: 24px;
 		line-height: normal;
 	}
 	.blog .blog-text .blog-filter a li {
@@ -3973,11 +3978,11 @@ header .menu-icon .section-title {
 		padding: 0 2rem;
 	}
 	.contactus .contactus-text h1{
-		font-size: 38px;
+		font-size: 32px;
 		line-height: 38px;
 	}
 	.contactus .contactus-text h4{
-		font-size: 28px;
+		font-size: 24px;
 		line-height: normal;
 	}
 	
@@ -4035,11 +4040,11 @@ header .menu-icon .section-title {
 		padding: 0 2rem;
 	}
 	.location .location-text h1{
-		font-size: 38px;
+		font-size: 34px;
 		line-height: 38px;
 	}
 	.location .location-text p{
-		font-size: 28px;
+		font-size: 24px;
 		line-height: normal;
 	}
 
@@ -4081,13 +4086,15 @@ header .menu-icon .section-title {
 	/*Team section*/
 	.team .team-text{
 		padding: 0 2rem;
+		row-gap: 2rem;
+    	margin-bottom: 2rem;
 	}
 	.team .team-text h1{
-		font-size: 38px;
+		font-size: 32px;
     	line-height: 38px;
 	}
 	.team .team-text h4{
-		font-size: 20px;
+		font-size: 24px;
 		line-height: 24px;
 		padding: 0 4rem;
 	}
