@@ -1585,6 +1585,17 @@ header .menu-icon .section-title {
 .team .team-text .splide__slide img {
 	border-radius: 25px;
 }
+.team .team-text .splide .team2-pic img {
+	transition: .5s ease;
+}
+.team .team-text .splide .team2-pic {
+	border-radius: 25px;
+	overflow: hidden;
+}
+.team .team-text .splide .splide__slide:hover .team2-pic img{
+	transform: scale(1.2);
+	filter: blur(5px);
+}
 
 /*Carousel Slider 3D*/
 .team .gallery-team {
