@@ -1240,12 +1240,12 @@ header .menu-icon .section-title {
 .about-third .about-third-text{
 	width: 100%;
     height: 100%;
-    padding: 15rem 30rem 5rem;
+    padding: 0rem 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-	row-gap: 2rem;
+	row-gap: 4rem;
 	color: #fff;
 }
 .about-cover-text {
@@ -1279,123 +1279,70 @@ header .menu-icon .section-title {
 	display: flex;
     flex-direction: column;
 }
-/*Carousel*/
-.about-third .wrapper{
-	display: flex;
-	max-width: 100%;
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	padding: 0 32rem;
-	margin-bottom: 20rem;
-  }
-.about-third  .carousel__control {
-	margin-top: -15px;
-	top: 50%;
-	position: absolute;
-	display: block;
-	cursor: pointer;
-	z-index: 1;
-  }
-.about-third .carousel__control--backward {
-	left: 18rem;
-  }
-.about-third .carousel__control--forward {
-	right: 18rem;
-  }
-.about-third .next-button, .about-third .back-button {
-	border: 1px solid #fff;
-	border-radius: 100%;
-	padding: 3rem 2rem;
-	position: absolute;
+/*SPLIDE*/
+.about-third .about-third-text .splide .splide__arrow {
 	background: transparent;
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    border: 1px solid #fff;
+	padding: 2rem;
 }
-.about-third .wrapper .carousel{
-	font-size: 0px;
-	cursor: pointer;
-	overflow: hidden;
-	white-space: nowrap;
-	scroll-behavior: smooth;
-	display: flex;
-  }
-.about-third .carousel.dragging{
-	cursor: grab;
-	scroll-behavior: auto;
-  }
-.about-third .carousel.dragging img{
-	pointer-events: none;
-  }
-.about-third .carousel img{
-	height: 450px;
-	object-fit: cover;
-	user-select: none;
-	width: 300px;
-	overflow: hidden;
-    border-radius: 300px;
-  }
-.about-third .carousel img:first-child{
-	margin-left: 0px;
-  }
-  
-  @media screen and (max-width: 900px) {
-	.about-third .carousel img{
-	  width: calc(100% / 2);
-	}
-  }
-  
-  @media screen and (max-width: 550px) {
-	.about-third .carousel img{
-	  width: 100%;
-	}
-  }
-.about-third .carousel .team-item{
+.about-third .about-third-text .splide .splide__arrow--prev {
+	left: -8em;
+}
+.about-third .about-third-text .splide .splide__arrow--next {
+	right: -8em;
+}
+.about-third .about-third-text .splide .splide__arrow svg{
+	width: 45px;
+}
+.about-third .about-third-text .splide .team-pic {
 	position: relative;
-	cursor: pointer;
-	margin-left: 20px;
 }
-.about-third .carousel .team-item .team-item-overlay::before {
+.about-third .about-third-text .splide .team-pic .team-more{
+	position: absolute;
+	bottom: 4rem;
+	transition: .5s ease;
+	opacity: 0;
+}
+.about-third .about-third-text .splide .team-pic .team-more h5:first-child{
+	text-align: center;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+	padding: 0 2rem;
+}
+.about-third .about-third-text .splide .team-pic .team-more h5:last-child{
+	color: var(--white, #FFFBFB);
+	text-align: center;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+}
+.about-third .about-third-text .splide .team-pic::before {
 	content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    background: rgba(7, 24, 74, 0.5);
 	border-radius: 20rem;
 	transition: .5s ease;
 	opacity: 0;
 }
-.about-third .carousel .team-item:hover .team-item-overlay::before {
-	opacity: 1;
+.about-third .about-third-text .splide .splide__slide:hover .team-more,
+.about-third .about-third-text .splide .splide__slide:hover .team-pic::before{
+	opacity: 1;	
 }
-.about-third .carousel .team-item .team-more {
-	position: absolute;
-    bottom: 4rem;
-    display: flex;
-    width: 100%;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    color: #fff;
-    font-size: 24px;
-	font-weight: 700;
-    transition: .5s ease;
-    opacity: 0;
-    z-index: 2;
-    flex-direction: column;
-    text-align: center;
-    white-space: normal;
-    text-transform: uppercase;
-    font-style: normal;
-    row-gap: 1rem;
-}
-.about-third .carousel .team-item .team-more .position{
-	font-size: 20px;
-    font-weight: 400;
-	padding: 0 1rem;
-}
-.about-third .carousel .team-item:hover .team-more{
-	opacity: 1;
+.about-third .about-third-text .splide .splide__slide {
+	cursor: pointer;
 }
 /* ********************************** */
 /*               SERVICES             */
@@ -3232,9 +3179,9 @@ header .menu-icon .section-title {
 	}
 	/*  ABOUT COVER  */
 	.about-cover .about-cover-text{
-		padding: 15rem 2rem 0rem;
+		padding: 0rem 2rem;
 		row-gap: 2rem;
-		justify-content: start;
+		justify-content: center;
 	}
 	.about-cover .about-cover-text h1{
 		font-size: 38px;
@@ -3247,9 +3194,10 @@ header .menu-icon .section-title {
 	}
 	/*  ABOUT THIRD  */
 	.about-third .about-third-text{
-		padding: 15rem 2rem 0rem;
+		padding: 0rem 2rem;
 		row-gap: 2rem;
-		justify-content: start;
+		justify-content: center;
+		align-items: center;
 	}
 	.about-third .about-third-text h1{
 		font-size: 38px;
@@ -3266,6 +3214,17 @@ header .menu-icon .section-title {
 
 	.about-third .about-third-button a{
 		padding: 2rem 2rem;
+	}
+	/*SPLIDE*/
+	.about-third .about-third-text .splide .splide__arrow {
+		width: 50px;
+		height: 50px;
+	}
+	.about-third .about-third-text .splide .splide__arrow--prev {
+		left: -6em;
+	}
+	.about-third .about-third-text .splide .splide__arrow--next {
+		right: -6em;
 	}
 	/*Carousel*/
 	.about-third .wrapper{

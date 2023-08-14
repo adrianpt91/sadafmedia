@@ -10,6 +10,7 @@
 		<title>Sadaf Media</title>
 		<link rel="icon" type="image/png" href="images/favicon.png"/>
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/splide.min.css" />
 		<link rel="stylesheet" href="css/fullpage.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
@@ -210,7 +211,79 @@
 					</video>
 					<div class="about-third-wrapper">
 						<div class="about-third-text">
-							<h1>OUR TEAM</h1>			
+							<h1>OUR TEAM</h1>
+							<div id="team-slider" class="splide" role="group" aria-label="Team carousel">
+								<div class="splide__arrows">
+									<button class="splide__arrow splide__arrow--prev">
+										<svg style="transform: rotate(0deg);" width="47" height="24" viewBox="0 0 47 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807608 11.0711 0.807608 10.4853 1.3934L0.939339 10.9393ZM47 10.5L2 10.5L2 13.5L47 13.5L47 10.5Z" fill="white"/>
+										</svg>											
+									</button>
+									<button class="splide__arrow splide__arrow--next">
+										<svg width="47" height="24" viewBox="0 0 47 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M46.0607 13.0607C46.6464 12.4749 46.6464 11.5251 46.0607 10.9393L36.5147 1.3934C35.9289 0.807611 34.9792 0.807611 34.3934 1.3934C33.8076 1.97919 33.8076 2.92893 34.3934 3.51472L42.8787 12L34.3934 20.4853C33.8076 21.0711 33.8076 22.0208 34.3934 22.6066C34.9792 23.1924 35.9289 23.1924 36.5147 22.6066L46.0607 13.0607ZM0 13.5L45 13.5V10.5L0 10.5L0 13.5Z" fill="white"/>
+										</svg>
+									</button>
+							  	</div>
+								<div class="splide__track">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<div class="team-pic">
+												<img width="100%" src="images/team/1.png" alt="team member 1">
+												<div class="team-more">
+													<h5>Sheikh Khalifa Bin Sultan Al Nahyan</h5>
+													<h5>CEO - FOUNDER</h5>
+												</div>												
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="team-pic">
+												<img width="100%" src="images/team/2.png" alt="team member 2">
+												<div class="team-more">
+													<h5>Juliette Chamorro Basurto</h5>
+													<h5>Asst. Director</h5>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="team-pic">
+												<img width="100%" src="images/team/3.png" alt="team member 3">
+												<div class="team-more">
+													<h5>Sarah Hoornaert</h5>
+													<h5>Content Creator</h5>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="team-pic">
+												<img width="100%" src="images/team/4.png" alt="team member 4">
+												<div class="team-more">
+													<h5>Maria Andrea Nieves</h5>
+													<h5>Social Media Content Creator</h5>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="team-pic">
+												<img width="100%" src="images/team/5.png" alt="team member 5">
+												<div class="team-more">
+													<h5>Julian Claria</h5>
+													<h5>Social Media Executive</h5>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="team-pic">
+												<img width="100%" src="images/team/6.png" alt="team member 6">
+												<div class="team-more">
+													<h5>Carlos Romero</h5>
+													<h5>Designer</h5>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>			
 						</div>
 					</div>
 				</div>
@@ -480,8 +553,33 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
 			crossorigin="anonymous" referrerpolicy="no-referrer">
 		</script>	
+		<script type="text/javascript" src="js/splide.min.js"></script>
 		<script type="text/javascript" src="js/fullpage.js"></script>
 		<script>
+			//Init team slider
+			var splide = new Splide( '#team-slider', {
+				type   : 'loop',
+				perPage: 4,
+				perMove: 1,
+				gap: '2rem',
+				pagination: false,
+				breakpoints: {
+					1440: {
+					  perPage: 3,
+					  gap: '1rem'
+					},
+					992: {
+						perPage: 2,
+						gap: '1rem'
+					},
+					480: {
+					  perPage: 1,
+					  width: '60%',
+					},
+				},
+			});
+			  
+			splide.mount();
 			//Full page		
 			var myFullpage = new fullpage('#fullpage', {
 				css3:true,
