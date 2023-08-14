@@ -665,7 +665,7 @@ header .menu-icon .section-title {
 .home-bottom .home-bottom-text{
 	width: 100%;
     height: 100%;
-    padding: 20rem 30rem;
+    padding: 0 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -758,7 +758,7 @@ header .menu-icon .section-title {
 .aboutus .about-text{
 	width: 100%;
     height: 100%;
-    padding: 20rem 36rem;
+    padding: 0 36rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -991,7 +991,7 @@ header .menu-icon .section-title {
 .about-second .about-second-text{
 	width: 100%;
     height: 100%;
-    padding: 15rem 35rem 10rem;
+    padding: 0 35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1199,7 +1199,7 @@ header .menu-icon .section-title {
 .about-cover .about-cover-text{
 	width: 100%;
     height: 100%;
-    padding: 10rem 50rem 25rem;
+    padding: 0 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1360,7 +1360,7 @@ header .menu-icon .section-title {
 .services .services-text{
 	width: 100%;
     height: 100%;
-    padding: 25rem 40rem;
+    padding: 0 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1559,7 +1559,7 @@ header .menu-icon .section-title {
 .team .team-text{
 	width: 100%;
 	height: 100%;
-    padding: 5rem 30rem;
+    padding: 0 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1707,7 +1707,7 @@ header .menu-icon .section-title {
 .work .work-text{
 	width: 100%;
 	height: 100%;
-    padding: 5rem 30rem;
+    padding: 0 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1972,7 +1972,7 @@ header .menu-icon .section-title {
 .blog .blog-text{
 	width: 100%;
     height: 100%;
-    padding: 15rem 30rem 5rem;
+    padding: 0 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2185,7 +2185,7 @@ header .menu-icon .section-title {
 .contactus .contactus-text{
 	width: 100%;
     height: 100%;
-    padding: 20rem 36rem;
+    padding: 0 36rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2302,7 +2302,7 @@ header .menu-icon .section-title {
 .location .location-text{
 	width: 100%;
     height: 100%;
-    padding: 20rem 36rem;
+    padding: 0 36rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2538,7 +2538,7 @@ header .menu-icon .section-title {
 
 	/*ABOUT SECOND*/
 	.about-second .about-second-text{
-		padding: 10rem 20rem 2rem;
+		padding: 0 20rem;
 	}
 	.about-second .about-second-text {
 		row-gap: 1rem;
@@ -2601,7 +2601,7 @@ header .menu-icon .section-title {
 	}
 	/*ABOUT COVER*/	
 	.about-cover .about-cover-text{
-		padding: 10rem 35rem 4rem;
+		padding: 0 35rem;
 	}
 	.about-cover .about-cover-text h1{
 		font-size: 40px;
@@ -2614,7 +2614,7 @@ header .menu-icon .section-title {
 	}
 	/*ABOUT THIRD*/	
 	.about-third .about-third-text{
-		padding: 10rem 35rem 4rem;
+		padding: 0 35rem;
 	}
 	.about-third .about-third-text h1{
 		font-size: 40px;
@@ -2668,7 +2668,7 @@ header .menu-icon .section-title {
 	}
 	/*TEAM SECTION*/
 	.team .team-text {
-		padding: 5rem 30rem;
+		padding: 0 30rem;
 	}
 	.team .team-text h1 {
 		font-size: 40px;
@@ -2711,7 +2711,7 @@ header .menu-icon .section-title {
 	}
 	/*SERVICES*/
 	.services .services-text{
-		padding: 12rem 20rem;
+		padding: 0 20rem;
 		row-gap: 1rem;
 	}
 	.services .services-text .text-wrapper {
@@ -2811,7 +2811,7 @@ header .menu-icon .section-title {
 		font-size: 24px;
 	}
 	.work .work-text {
-		padding: 15rem 20rem 2rem;
+		padding: 0 20rem;
 	}
 	.work .work-text .work-filter a li {
 		font-size: 18px;
@@ -2857,7 +2857,7 @@ header .menu-icon .section-title {
 		font-size: 24px;
 	}
 	.blog .blog-text {
-		padding: 15rem 20rem 2rem;
+		padding: 0 20rem;
 	}
 	.blog .blog-text .blog-filter a li {
 		font-size: 18px;
@@ -2924,7 +2924,7 @@ header .menu-icon .section-title {
 		height: 300px;
 	}
 	.location .location-text {
-		padding: 12rem 20rem;
+		padding: 0 20rem;
 	}
 
 	/*FOOTER FAKE*/
@@ -3057,8 +3057,7 @@ header .menu-icon .section-title {
 		margin-bottom: 0;
 	}
 	.home-bottom .home-bottom-text{
-		padding: 15rem 2rem 0;
-		justify-content: start;
+		padding: 0 2rem;
 		row-gap: 2rem;
 	}
 	.home-bottom .home-bottom-text h1{
@@ -3090,7 +3089,7 @@ header .menu-icon .section-title {
 	}
 	/*  ABOUT US  */
 	.aboutus .about-text{
-		padding: 12rem 4rem;
+		padding: 0 2rem;
 		display: flex;
 		justify-content: start;
 		text-align: center;
@@ -3134,8 +3133,7 @@ header .menu-icon .section-title {
 	}
 	/* ABOUT SECOND   */
 	.about-second .about-second-text{
-		padding: 15rem 2rem 0;
-		justify-content: start;
+		padding: 0 2rem;
 		row-gap: 2rem;
 	}
 	.about-second .about-second-text h1{
@@ -3261,7 +3259,7 @@ header .menu-icon .section-title {
 	}
 	/*SERVICES*/
 	.services .services-text{
-		padding: 15rem 2rem;
+		padding: 0 2rem;
 		row-gap: 2rem;
 	}
 	.services .services-text .text-wrapper {
@@ -3429,7 +3427,7 @@ header .menu-icon .section-title {
 
 	/*BLOG*/
 	.blog .blog-text{
-		padding: 15rem 2rem 2rem;
+		padding: 0 2rem;
 	}
 	.blog .blog-text h1{
 		font-size: 39px;
@@ -3491,7 +3489,7 @@ header .menu-icon .section-title {
 	}
 	/*CONTACT US*/
 	.contactus .contactus-text{
-		padding: 15rem 2rem;
+		padding: 0 2rem;
 	}
 	.contactus .contactus-text h1{
 		font-size: 38px;
@@ -3553,7 +3551,7 @@ header .menu-icon .section-title {
 
 	/*LOCATION*/
 	.location .location-text{
-		padding: 15rem 2rem;
+		padding: 0 2rem;
 	}
 	.location .location-text h1{
 		font-size: 38px;
