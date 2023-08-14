@@ -54,7 +54,7 @@ main::-webkit-scrollbar {
 	height: 100%; 
 	z-index: 9999; 
 	display: flex;
-	background: #fff;
+	background: #000;
 	justify-content: center;
 	align-items: center;
 }
@@ -121,6 +121,88 @@ main::-webkit-scrollbar {
 .hidden {
 	display: none;
 }
+
+/*Loader*/
+#loading .loader--dot {
+	animation-name: loader;
+	animation-timing-function: ease-in-out;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	height: 20px;
+	width: 20px;
+	border-radius: 100%;
+	background-color: black;
+	position: absolute;
+}
+#loading .loader--dot:first-child {
+	background-color: #10b39f;
+	animation-delay: 0.5s;
+}
+#loading .loader--dot:nth-child(2) {
+	background-color: #e6af47;
+	animation-delay: 0.4s;
+}
+#loading .loader--dot:nth-child(3) {
+	background-color: #4598be;
+	animation-delay: 0.3s;
+}
+#loading .loader--dot:nth-child(4) {
+	background-color: #e6af47;
+	animation-delay: 0.2s;
+}
+#loading .loader--dot:nth-child(5) {
+	background-color: #db6a69;
+	animation-delay: 0.1s;
+}
+#loading .loader--dot:nth-child(6) {
+	background-color: #10b39f;
+	animation-delay: 0s;
+}
+#loading .loader--text {
+	position: absolute;
+	top: 200%;
+	left: 0;
+	right: 0;
+	width: 4rem;
+	margin: auto;
+}
+#loading .loader--text:after {
+	content: "Loading";
+	font-weight: bold;
+	animation-name: loading-text;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+	15% {
+		transform: translateX(0);
+	}
+	45% {
+		transform: translateX(230px);
+	}
+	65% {
+		transform: translateX(230px);
+	}
+	95% {
+		transform: translateX(0);
+	}
+}
+@keyframes loading-text {
+	0% {
+		content: "Loading";
+	}
+	25% {
+		content: "Loading.";
+	}
+	50% {
+		content: "Loading..";
+	}
+	75% {
+		content: "Loading...";
+	}
+}
+
 /* ********************************** */
 /*               MODAL               */
 /* ********************************** */

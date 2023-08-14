@@ -74,6 +74,18 @@
 			</div>
 		</header>
 
+		<div id='loading'>
+			<div class='loader'>
+			  <div class='loader--dot'></div>
+			  <div class='loader--dot'></div>
+			  <div class='loader--dot'></div>
+			  <div class='loader--dot'></div>
+			  <div class='loader--dot'></div>
+			  <div class='loader--dot'></div>
+			  <div class='loader--text'></div>
+			</div>
+		</div>
+
 		<!--Menu Mobile-->
 		<div class="menu">
 			<div class="menuItems">
@@ -721,6 +733,11 @@
 		<script type="text/javascript" src="js/splide.min.js"></script>
 		<script type="text/javascript" src="js/fullpage.js"></script>
 		<script>
+			// Remove the loading screen when the content is loaded
+			window.addEventListener('load', function() {
+				var loadingFrame = document.getElementById('loading');
+				loadingFrame.style.display = 'none';
+			});
 			//Init sliders
 			var splide = new Splide( '#team-slider', {
 				type   : 'loop',
