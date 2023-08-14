@@ -18,6 +18,12 @@ body {
 /* ********************************** */
 /*             UTILITIES              */
 /* ********************************** */
+.fp-viewing-services canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: transparent !important;
+}
 main {
 	/*scroll-snap-type: y mandatory;*/
 	height: 100vh;

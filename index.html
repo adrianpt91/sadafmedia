@@ -347,7 +347,7 @@
 					</div>					
 				</div>
 			<!--SERVICES SECTION-->
-			<div class="section services child">
+			<div class="section services child" id="servicesContainer">
 				<div class="services-text">
 					<h1>HOW WE WORK</h1>
 					<h4>BUILDING YOUR BUSINESS IS OUR BUSINESS</h4>
@@ -612,10 +612,10 @@
 					<h1>WHERE WE ARE</h1>
 					<div>
 						<p>Al Zahiyah - Abu Dhabi Mall</p>
-						<p>Abu Dhabi . Dubai</p>
+						<p>Abu Dhabi</p>
 					</div>					
 					<div class="location-more animate">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14526.86357295134!2d54.37882661663857!3d24.460640420939978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e689d396c5bf7%3A0x1ec8bf4686636030!2sSheikha%20Jameela%20Tower!5e0!3m2!1ses-419!2sae!4v1690118842253!5m2!1ses-419!2sae" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.6977010652276!2d54.38065097449594!3d24.495928959748966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e6650e85f66f9%3A0x735d28e425d8f2f4!2sAbu%20Dhabi%20Mall!5e0!3m2!1ses-419!2sae!4v1692017292823!5m2!1ses-419!2sae" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>									
 				</div>				
 			</div>
@@ -738,12 +738,13 @@
 			</div>
 		</div>
 
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js'></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
 			crossorigin="anonymous" referrerpolicy="no-referrer">
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
 			crossorigin="anonymous" referrerpolicy="no-referrer">
-		</script>	
+		</script>		
 		<script type="text/javascript" src="js/p5.min.js"></script>
 		<script type="text/javascript" src="js/sadaf.js"></script>
 		<script type="text/javascript" src="js/splide.min.js"></script>
@@ -761,6 +762,9 @@
 				perMove: 1,
 				gap: '2rem',
 				pagination: false,
+				autoplay: true,
+				interval: 5000,
+				pauseOnHover: true,
 				breakpoints: {
 					1440: {
 					  perPage: 3,
@@ -782,6 +786,9 @@
 				perMove: 1,
 				gap: '2rem',
 				pagination: false,
+				autoplay: true,
+				interval: 5000,
+				pauseOnHover: true,
 				breakpoints: {
 					1440: {
 					  perPage: 2,
@@ -875,6 +882,12 @@
 						}
 						if (index.anchor === 'services') {
 							sectionTitleDiv.textContent = 'SERVICES';
+							//const sectionDiv = document.getElementById('servicesContainer');
+							//const canvasElement = sectionDiv.querySelector('canvas');
+							//if (!canvasElement) {
+							//	runMatterCode();
+							//}
+							
 						}
 						if (index.anchor === 'work') {
 							sectionTitleDiv.textContent = 'WORK';
