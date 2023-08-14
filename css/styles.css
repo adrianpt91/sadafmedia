@@ -1303,12 +1303,18 @@ header .menu-icon .section-title {
 
 .about-third .about-third-text .splide .team-pic {
 	position: relative;
+	display: flex;
+    justify-content: center;
 }
 .about-third .about-third-text .splide .team-pic .team-more{
 	position: absolute;
 	bottom: 4rem;
 	transition: .5s ease;
 	opacity: 0;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .about-third .about-third-text .splide .team-pic .team-more h5:first-child{
 	text-align: center;
@@ -2662,7 +2668,7 @@ header .menu-icon .section-title {
 	}
 	.about-second .about-second-text .text-wrapper {
 		row-gap: 1rem;
-    	padding: 2rem 4rem 0;
+    	padding: 2rem 20rem 0;
 	}
 	.about-second .about-second-text .text-wrapper .text-content {
 		row-gap: 1rem;
@@ -2804,7 +2810,7 @@ header .menu-icon .section-title {
 		row-gap: 1rem;
 	}
 	.services .services-text .text-wrapper {
-		padding-top: 2rem;
+		padding: 2rem 10rem 0;
 	}
 	.services .services-text h1{
 		font-size: 40px;
@@ -3065,6 +3071,9 @@ header .menu-icon .section-title {
 	}
 	.about-second .about-second-text h4 {
 		padding: 0 5rem;
+	}
+	.about-second .about-second-text .text-wrapper {
+		padding: 2rem 10rem 0;
 	}
 	/*ABOUT COVER*/
 	.about-cover .about-cover-text {
