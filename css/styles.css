@@ -26,7 +26,13 @@ main {
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */		
 }
-	/* Hide scrollbar for Chrome, Safari and Opera */
+
+main #defaultCanvas0 {
+	position: absolute;
+    top: 0;
+    left: 0;
+	z-index: -1;
+}
 main::-webkit-scrollbar {
 	display: none;
 }
