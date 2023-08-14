@@ -1764,6 +1764,7 @@ header .menu-icon .section-title {
 
 .work .work-text .splide .work-pic{
 	overflow: hidden;
+	border-radius: 25px;
 }
 .work .work-text .splide .work-pic img{
 	transition: .5s ease;
@@ -2040,6 +2041,7 @@ header .menu-icon .section-title {
 .blog .blog-text .splide .blog-pic {
 	position: relative;
 	overflow: hidden;
+	border-radius: 25px;
 }
 .blog .blog-text .splide .blog-pic .blog-more{
 	position: absolute;
@@ -3443,10 +3445,13 @@ header .menu-icon .section-title {
 		height: 50px;
 	}
 	.splide .splide__arrow--prev {
-		left: -6em;
+		left: -4.5em;
 	}
 	.splide .splide__arrow--next {
-		right: -6em;
+		right: -4.5em;
+	}
+	.about-third .about-third-text .splide .splide__arrow {
+		padding: 0;
 	}
 	/*Carousel*/
 	.about-third .wrapper{
@@ -3586,6 +3591,20 @@ header .menu-icon .section-title {
 		font-size: 12px;
 		padding: 1rem 0.25rem;
 	}
+	.work .work-text .splide__slide img {
+		height: 350px;
+		object-fit: cover;
+	}
+	.work .work-text .splide .splide__arrow--prev {
+		left: -10px;
+	}
+	.work .work-text .splide .splide__arrow--next {
+		right: -10px;
+	}
+	.work .work-text .splide .splide__arrow {
+		padding: 0rem;
+		border: none;
+	}
 	
 	/*Carousel Slider 3D*/	  
 	.work .gallery {
@@ -3678,10 +3697,21 @@ header .menu-icon .section-title {
 		padding: 0.5rem 0;
 	}
 	.blog .blog-text  .splide .splide__arrow {
-		padding: 1rem;
+		padding: 0rem;
+		border: none;
 	}
 	.blog .blog-text .splide .blog-pic .read-more h6 {
 		font-size: 14px;
+	}
+	.blog .blog-text .splide__slide img {
+		height: 350px;
+		object-fit: cover;
+	}
+	.blog .blog-text .splide .splide__arrow--prev {
+		left: -10px;
+	}
+	.blog .blog-text .splide .splide__arrow--next {
+		right: -10px;
 	}
 	
 	/*Gallery*/
@@ -3850,6 +3880,20 @@ header .menu-icon .section-title {
 		font-size: 20px;
 		line-height: 24px;
 		padding: 0 4rem;
+	}
+	.team .team-text .splide__slide img {
+		height: 350px;
+		object-fit: cover;
+	}
+	.team .team-text .splide .splide__arrow {
+		padding: 0rem;
+		border: none;
+	}
+	.team .team-text .splide .splide__arrow--prev {
+		left: -10px;
+	}
+	.team .team-text .splide .splide__arrow--next {
+		right: -10px;
 	}
 	
 	/*Carousel Slider 3D*/	  
