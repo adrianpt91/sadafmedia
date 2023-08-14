@@ -8,8 +8,6 @@ menuIcon.addEventListener('click', function() {
   document.querySelector('.section-title').classList.toggle('hidden');
 });
 
-//======Particles circle in Home==========//
-
 //========Init Particle slider==========//
 var init = function(){
   var ps = new ParticleSlider({
