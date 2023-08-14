@@ -294,6 +294,59 @@
 					</video>
 					<div class="team-text">
 						<h1>OUR TEAM</h1>
+						<div id="team2-slider" class="splide animate" role="group" aria-label="Team2 carousel">
+							<div class="splide__arrows">
+								<button class="splide__arrow splide__arrow--prev">
+									<svg style="transform: rotate(0deg);" width="47" height="24" viewBox="0 0 47 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.807608 11.0711 0.807608 10.4853 1.3934L0.939339 10.9393ZM47 10.5L2 10.5L2 13.5L47 13.5L47 10.5Z" fill="white"/>
+									</svg>											
+								</button>
+								<button class="splide__arrow splide__arrow--next">
+									<svg width="47" height="24" viewBox="0 0 47 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M46.0607 13.0607C46.6464 12.4749 46.6464 11.5251 46.0607 10.9393L36.5147 1.3934C35.9289 0.807611 34.9792 0.807611 34.3934 1.3934C33.8076 1.97919 33.8076 2.92893 34.3934 3.51472L42.8787 12L34.3934 20.4853C33.8076 21.0711 33.8076 22.0208 34.3934 22.6066C34.9792 23.1924 35.9289 23.1924 36.5147 22.6066L46.0607 13.0607ZM0 13.5L45 13.5V10.5L0 10.5L0 13.5Z" fill="white"/>
+									</svg>
+								</button>
+							  </div>
+							<div class="splide__track">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<div class="team2-pic">
+											<img width="100%" src="images/team2/1.png" alt="team2 member 1">								
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="team2-pic">
+											<img width="100%" src="images/team2/2.png" alt="team2 member 2">
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="team2-pic">
+											<img width="100%" src="images/team2/3.png" alt="team2 member 3">
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="team2-pic">
+											<img width="100%" src="images/team2/4.png" alt="team2 member 4">
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="team2-pic">
+											<img width="100%" src="images/team2/5.png" alt="team2 member 5">
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="team2-pic">
+											<img width="100%" src="images/team2/6.png" alt="team2 member 6">
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="team2-pic">
+											<img width="100%" src="images/team2/7.png" alt="team2 member 6">
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>					
 				</div>
 			<!--SERVICES SECTION-->
@@ -556,7 +609,7 @@
 		<script type="text/javascript" src="js/splide.min.js"></script>
 		<script type="text/javascript" src="js/fullpage.js"></script>
 		<script>
-			//Init team slider
+			//Init sliders
 			var splide = new Splide( '#team-slider', {
 				type   : 'loop',
 				perPage: 4,
@@ -578,8 +631,30 @@
 					},
 				},
 			});
+			var splide2 = new Splide( '#team2-slider', {
+				type   : 'loop',
+				perPage: 3,
+				perMove: 1,
+				gap: '2rem',
+				pagination: false,
+				breakpoints: {
+					1440: {
+					  perPage: 2,
+					  gap: '1rem'
+					},
+					992: {
+						perPage: 2,
+						gap: '1rem'
+					},
+					480: {
+					  perPage: 1,
+					  width: '60%',
+					},
+				},
+			});
 			  
 			splide.mount();
+			splide2.mount();
 			//Full page		
 			var myFullpage = new fullpage('#fullpage', {
 				css3:true,
