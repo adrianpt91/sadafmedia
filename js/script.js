@@ -140,3 +140,28 @@ window.addEventListener("click", function(event) {
 });
 //=================================//
 
+//=========Modal project logic=====//
+const projectItems = document.querySelectorAll('.project-item');
+const modalProject = document.getElementById('modalProject');
+const modalImage = document.getElementById('modalImage');
+const closeModalProject = document.querySelector('.close-project');
+
+projectItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const imgSrc = item.getAttribute('src');
+        modalImage.setAttribute('src', imgSrc);
+        modalProject.classList.add('show');
+    });
+});
+
+closeModalProject.addEventListener('click', () => {  
+  modalProject.classList.remove('show');
+});
+
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modalProject.classList.remove('show');
+    }
+});
+
+
