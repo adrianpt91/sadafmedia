@@ -870,6 +870,15 @@
 			  } );
 			  
 			splideModal.mount();
+			splideModal.on( 'move', function (newIndex, prevIndex, destIndex) {
+				if(destIndex === 1){
+					document.getElementById('modalImage').style.filter = 'blur(5px)'
+					document.getElementById('modalProject').classList.add('modalActive')
+				}else {
+					document.getElementById('modalImage').style.filter = 'blur(0)'
+					document.getElementById('modalProject').classList.remove('modalActive')
+				}
+			});
 			  
 			splide.mount();
 			splide2.mount();
