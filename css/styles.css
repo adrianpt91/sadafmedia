@@ -2003,6 +2003,15 @@ header .menu-icon .section-title {
     line-height: normal;
     max-width: 60%;
 }
+.modalProject .mouse {
+	position: absolute;
+    max-height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
 /*Carousel Slider 3D*/
 .work .gallery {
 	width: 100%;

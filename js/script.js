@@ -1,12 +1,21 @@
 //============Menu Mobile logic============//
 const menuIcon = document.querySelector('.menu-icon');
 const menu = document.querySelector('.menu');
+const menuMobileItems = document.querySelectorAll('.menu a')
 
 menuIcon.addEventListener('click', function() {
 	menuIcon.classList.toggle('rotate');
 	menu.classList.toggle('show');
   document.querySelector('.section-title').classList.toggle('hidden');
 });
+
+menuMobileItems.forEach(item => {
+  item.addEventListener('click', function() {
+    menuIcon.classList.toggle('rotate');
+    menu.classList.toggle('show');
+    document.querySelector('.section-title').classList.toggle('hidden');
+  })
+})
 
 //========Init Particle slider==========//
 var init = function(){
