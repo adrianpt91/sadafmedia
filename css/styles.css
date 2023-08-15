@@ -14,7 +14,10 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 }
-
+a[href^=tel] {
+	text-decoration:inherit;
+	color: inherit;
+}
 /* ********************************** */
 /*             UTILITIES              */
 /* ********************************** */
@@ -3391,6 +3394,9 @@ header .menu-icon .section-title {
 	#particleCanvas {
 		display: none;
 	}
+	main {
+		display: none;
+	}
 	.footer {
 		margin-bottom: 1rem;
 	}
@@ -3656,9 +3662,13 @@ header .menu-icon .section-title {
 		padding: 2rem 2rem;
 	}
 	/*SPLIDE*/
+	.splide__pagination {
+		bottom: -2.5em !important;
+	}
 	.splide .splide__arrow {
 		width: 50px;
 		height: 50px;
+		border: none;
 	}
 	.splide .splide__arrow--prev {
 		left: -4.5em;
