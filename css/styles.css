@@ -3421,6 +3421,9 @@ header .menu-icon .section-title {
 	header .logo {
 		margin-left: 10px;
 	}
+	header .logo svg {
+		width: 110px;
+	}
 
 	header .menu-icon {
 		margin-right: 10px;
@@ -3438,7 +3441,14 @@ header .menu-icon .section-title {
 	}
 
 	header .menu-icon svg {
-		width: 28px;
+		width: 25px;
+	}
+
+	.menu.show .main-menu a li {
+		font-size: 32px;
+	}
+	.menu.show a li {
+		padding: 1.5rem 2rem;
 	}
 
 	/*Modal*/
