@@ -124,13 +124,11 @@ main::-webkit-scrollbar {
 }
 /*Parallax*/
 .section{
-	position: fixed;
-	width: 100%; height: 100%; top: 0; left: 0;
+	vertical-align: middle;
+	text-align: center;
   	animation: 1s linear;
-  	background-size: cover;
-  	background-repeat: no-repeat;
-  	background-position: center center;
 	overflow: hidden;
+	height: 100%
 }
 
 .hidden {
@@ -780,6 +778,7 @@ header .menu-icon .section-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
     text-align: center;
 	row-gap: 2rem;
 	position: relative;
@@ -873,6 +872,7 @@ header .menu-icon .section-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
     text-align: center;
 	row-gap: 2rem;
 	position: relative;
@@ -1106,6 +1106,7 @@ header .menu-icon .section-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
     text-align: center;
 	row-gap: 2rem;
 	color: #fff;
@@ -1314,6 +1315,7 @@ header .menu-icon .section-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
     text-align: center;
 	row-gap: 2rem;
 	color: #fff;
@@ -1355,6 +1357,7 @@ header .menu-icon .section-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
     text-align: center;
 	row-gap: 4rem;
 	color: #fff;
@@ -1483,6 +1486,7 @@ header .menu-icon .section-title {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+	align-items: center;
 	row-gap: 2rem;
 }
 .services .services-text canvas{
@@ -2491,6 +2495,7 @@ header .menu-icon .section-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
     text-align: center;
 	row-gap: 2rem;
 }
@@ -2608,6 +2613,7 @@ header .menu-icon .section-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
     text-align: center;
 	row-gap: 2rem;
 	position: relative;
@@ -2650,6 +2656,7 @@ header .menu-icon .section-title {
     display: flex;
     flex-direction: column;
     justify-content: end;
+	align-items: center;
     text-align: center;
 	row-gap: 4rem;
 }
