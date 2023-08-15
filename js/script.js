@@ -79,16 +79,20 @@ projectItems.forEach(item => {
         const imgSrc = item.getAttribute('src');
         modalImage.setAttribute('src', imgSrc);
         modalProject.classList.add('show');
+        modalProject.scrollTop = 0;
+        fullpage_api.setAllowScrolling(false);
     });
 });
 
 closeModalProject.addEventListener('click', () => {  
   modalProject.classList.remove('show');
+  fullpage_api.setAllowScrolling(true);
 });
 
 window.addEventListener('click', (event) => {
     if (event.target === modal) {
       modalProject.classList.remove('show');
+      fullpage_api.setAllowScrolling(true);
     }
 });
 

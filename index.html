@@ -372,28 +372,34 @@
 					<div class="service-wrapper animate">
 						<div class="services-more">
 							<div class="service first">
-								<img class="icon" src="images/services/1/icon.png" alt="service icon">
-								<h5 class="service-text">MEDIA STRATEGY CONSULTANCY</h5>
+								<img width="100%" src="images/services/1.png" alt="service 1">
+								<!--<img class="icon" src="images/services/1/icon.png" alt="service icon">
+								<h5 class="service-text">MEDIA STRATEGY CONSULTANCY</h5>-->
 							</div>
 							<div class="service second">
-								<img class="icon" src="images/services/2/icon.png" alt="service icon">
-								<h5 class="service-text">CREATIVE BRANDING & DESIGN</h5>
+								<img width="100%" src="images/services/2.png" alt="service 2">
+								<!--<img class="icon" src="images/services/2/icon.png" alt="service icon">
+								<h5 class="service-text">CREATIVE BRANDING & DESIGN</h5>-->
 							</div>
 							<div class="service three">
-								<img class="icon" src="images/services/3/icon.png" alt="service icon">
-								<h5 class="service-text">CREATIVE BRANDING & DESIGN</h5>
+								<img width="100%" src="images/services/3.png" alt="service 3">
+								<!--<img class="icon" src="images/services/3/icon.png" alt="service icon">
+								<h5 class="service-text">CREATIVE BRANDING & DESIGN</h5>-->
 							</div>
 							<div class="service four">
-								<img class="icon" src="images/services/4/icon.png" alt="service icon">
-								<h5 class="service-text">VIDEOGRAPHY & PHOTOGRAPHY</h5>
+								<img width="100%" src="images/services/4.png" alt="service 4">
+								<!--<img class="icon" src="images/services/4/icon.png" alt="service icon">
+								<h5 class="service-text">VIDEOGRAPHY & PHOTOGRAPHY</h5>-->
 							</div>
 							<div class="service five">
-								<img class="icon" src="images/services/5/icon.png" alt="service icon">
-								<h5 class="service-text">ANIMATION</h5>
+								<img width="100%" src="images/services/5.png" alt="service 5">
+								<!--<img class="icon" src="images/services/5/icon.png" alt="service icon">
+								<h5 class="service-text">ANIMATION</h5>-->
 							</div>
 							<div class="service six">
-								<img class="icon" src="images/services/6/icon.png" alt="service icon">
-								<h5 class="service-text">SOCIAL MEDIA</h5>
+								<img width="100%" src="images/services/6.png" alt="service 6">
+								<!--<img class="icon" src="images/services/6/icon.png" alt="service icon">
+								<h5 class="service-text">SOCIAL MEDIA</h5>-->
 							</div>
 						</div>
 					</div>
@@ -729,14 +735,26 @@
 		<!--Modal Project-->
 		<div id="modalProject" class="modalProject">
 			<span class="close-project">&times;</span>
-			<img class="modal-content-project" id="modalImage">
-			<div class="modal-project-text">
-				<h1>Project Title</h1>
-				<h4>SHORT DESCRIPTION</h4>
-				<p>Whatever you’re looking to achieve, feel free to call our studio for an 
-					informal chat, drop us an email or pop in for a cup of coffee and some fresh ideas.
-				</p>
-			</div>
+			<img class="modal-background" id="modalImage">
+			<section id="splideModal" class="splide splide-modal" aria-label="Splide inside a modal">
+				<div class="splide__track">
+					  <ul class="splide__list">
+						  <li class="splide__slide">
+							<div class="modal-project-text">
+							</div>
+						  </li>
+						  <li class="splide__slide">
+							<div class="modal-project-text">
+								<h1>Project Title</h1>
+								<h4>SHORT DESCRIPTION</h4>
+								<p>Whatever you’re looking to achieve, feel free to call our studio for an 
+									informal chat, drop us an email or pop in for a cup of coffee and some fresh ideas.
+								</p>
+							</div>
+						  </li>
+					  </ul>
+				</div>
+			</section>								
 		</div>
 
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js'></script>
@@ -842,6 +860,16 @@
 					},
 				},
 			});
+
+			var splideModal = new Splide( '#splideModal', {
+				direction: 'ttb',
+				wheel    : true,
+				height   : '100%',
+				pagination: false,
+				arrows: false,
+			  } );
+			  
+			splideModal.mount();
 			  
 			splide.mount();
 			splide2.mount();

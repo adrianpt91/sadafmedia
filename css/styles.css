@@ -405,7 +405,22 @@ textarea:focus {
 textarea::placeholder {
 	color: #000;
   }
-  
+
+/*Modal Scroll behavior*/
+.splide-modal {
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+.modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	filter: blur(5px);
+}  
 /* ********************************** */
 /*               HEADER               */
 /* ********************************** */
@@ -1896,8 +1911,8 @@ header .menu-icon .section-title {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-	z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+	z-index: 5;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
 	display: none;
@@ -1912,10 +1927,9 @@ header .menu-icon .section-title {
     display: block;
     max-width: 100%;
     max-height: 100%;
-    height: 100100%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
-	filter: blur(5px);
 }
 .modalProject::before {
 	content: "";
@@ -3926,7 +3940,7 @@ header .menu-icon .section-title {
 	}
 
 	.blog .blog-text .splide .blog-pic .blog-more {
-		padding: 0.5rem;
+		padding: 2rem;
 	}
 	.blog .blog-text .splide .blog-pic .blog-more h5 {
 		max-width: 100%;
@@ -3934,7 +3948,7 @@ header .menu-icon .section-title {
 		line-height: normal;
 	}
 	.blog .blog-text .splide .blog-pic .read-more {
-		padding: 0.5rem 0;
+		padding: 1rem 0;
 	}
 	.blog .blog-text  .splide .splide__arrow {
 		padding: 0rem;
