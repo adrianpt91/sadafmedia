@@ -124,11 +124,9 @@
 						<main></main>
 					</div>
 				</div>
-				<canvas id="particleCanvas" style="position: absolute;"></canvas>								
-				<!--<video autoplay muted loop class="video-home">
-					<source src="images/beach.mp4" type="video/mp4">
-				</video>-->
+				<canvas id="particleCanvas" style="position: absolute;"></canvas>	
 			</div>
+
 			<!--HOME SECTION-->		
 			<div class="section home-bottom child">
 				<video autoplay muted loop plays-inline class="back-video" data-autoplay>
@@ -146,7 +144,8 @@
 					</div>		
 				</div>				
 			</div>
-				<!--ABOUT US SECTION FIRST-->
+
+			<!--ABOUT US SECTION FIRST-->
 				<div class="section about-second child">
 					<video autoplay muted loop plays-inline class="back-video" data-autoplay>
 						<source src="images/dessert_dark.mp4" type="video/mp4">
@@ -185,7 +184,8 @@
 						</div>
 					</div>
 				</div>
-				<!--ABOUT US SECTION COVER-->
+
+			<!--ABOUT US COVER SECTION -->
 				<div class="section about-cover child" id="about_third">
 					<video autoplay muted loop plays-inline class="back-video" data-autoplay>
 						<source src="images/bay.mp4" type="video/mp4">
@@ -201,8 +201,9 @@
 							</div>			
 						</div>
 					</div>
-				</div>	
-				<!--ABOUT US TEAM SECTION-->
+				</div>
+
+			<!--ABOUT US TEAM SECTION-->
 				<div class="section about-third child">
 					<video autoplay muted loop plays-inline class="back-video" data-autoplay>
 						<source src="images/dessert_dark.mp4" type="video/mp4">
@@ -285,7 +286,8 @@
 						</div>
 					</div>
 				</div>
-				<!--ABOUT US TEAM2 SECTION-->
+
+			<!--ABOUT US TEAM2 SECTION-->
 				<div class="section team child">
 					<video autoplay muted loop plays-inline class="back-video" data-autoplay>
 						<source src="images/dessert_dark.mp4" type="video/mp4">
@@ -347,6 +349,7 @@
 						</div>
 					</div>					
 				</div>
+
 			<!--SERVICES SECTION-->
 			<div class="section services child" id="servicesContainer">
 				<div class="services-text">
@@ -373,38 +376,27 @@
 						<div class="services-more">
 							<div class="service first">
 								<img width="100%" src="images/services/1.png" alt="service 1">
-								<!--<img class="icon" src="images/services/1/icon.png" alt="service icon">
-								<h5 class="service-text">MEDIA STRATEGY CONSULTANCY</h5>-->
 							</div>
 							<div class="service second">
 								<img width="100%" src="images/services/2.png" alt="service 2">
-								<!--<img class="icon" src="images/services/2/icon.png" alt="service icon">
-								<h5 class="service-text">CREATIVE BRANDING & DESIGN</h5>-->
 							</div>
 							<div class="service three">
 								<img width="100%" src="images/services/3.png" alt="service 3">
-								<!--<img class="icon" src="images/services/3/icon.png" alt="service icon">
-								<h5 class="service-text">CREATIVE BRANDING & DESIGN</h5>-->
 							</div>
 							<div class="service four">
 								<img width="100%" src="images/services/4.png" alt="service 4">
-								<!--<img class="icon" src="images/services/4/icon.png" alt="service icon">
-								<h5 class="service-text">VIDEOGRAPHY & PHOTOGRAPHY</h5>-->
 							</div>
 							<div class="service five">
 								<img width="100%" src="images/services/5.png" alt="service 5">
-								<!--<img class="icon" src="images/services/5/icon.png" alt="service icon">
-								<h5 class="service-text">ANIMATION</h5>-->
 							</div>
 							<div class="service six">
 								<img width="100%" src="images/services/6.png" alt="service 6">
-								<!--<img class="icon" src="images/services/6/icon.png" alt="service icon">
-								<h5 class="service-text">SOCIAL MEDIA</h5>-->
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>			
+			</div>
+
 			<!--WORK SECTION-->
 			<div class="section work child">
 				<div class="work-text">
@@ -459,6 +451,7 @@
 					</div>
 				</div>				
 			</div>
+
 			<!--BLOG SECTION-->
 			<div class="section blog child">
 				<div class="container">
@@ -578,6 +571,7 @@
 					</div>						
 				</div>
 			</div>
+
 			<!--CONTACT US SECTION-->
 			<div class="section contactus child">
 				<video autoplay muted loop plays-inline class="video-location" data-autoplay>
@@ -610,6 +604,7 @@
 					</div>				
 				</div>
 			</div>
+
 			<!--LOCATION SECTION-->
 			<div class="section location child">
 				<video autoplay muted loop class="back-video" data-autoplay>
@@ -626,6 +621,7 @@
 					</div>									
 				</div>				
 			</div>
+
 			<!--FOOTER SECTION-->
 			<div class="section footer footer-fake child">
 				<div class="footer-fake-text">
@@ -760,7 +756,6 @@
 			</section>								
 		</div>
 
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js'></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
 			crossorigin="anonymous" referrerpolicy="no-referrer">
 		</script>
@@ -777,7 +772,8 @@
 				var loadingFrame = document.getElementById('loading');
 				loadingFrame.style.display = 'none';
 			});
-			//Init sliders
+
+			//Init sliders splide.js
 			var splide = new Splide( '#team-slider', {
 				type   : 'loop',
 				perPage: 4,
@@ -887,7 +883,8 @@
 			splide2.mount();
 			splide3.mount();
 			splide4.mount();
-			//Full page		
+
+			//Init fullpage.js		
 			var myFullpage = new fullpage('#fullpage', {
 				css3:true,
 				scrollingSpeed: 1000,
@@ -928,13 +925,7 @@
 							sectionTitleDiv.textContent = 'ABOUT US';
 						}
 						if (index.anchor === 'services') {
-							sectionTitleDiv.textContent = 'SERVICES';
-							//const sectionDiv = document.getElementById('servicesContainer');
-							//const canvasElement = sectionDiv.querySelector('canvas');
-							//if (!canvasElement) {
-							//	runMatterCode();
-							//}
-							
+							sectionTitleDiv.textContent = 'SERVICES';							
 						}
 						if (index.anchor === 'work') {
 							sectionTitleDiv.textContent = 'WORK';
