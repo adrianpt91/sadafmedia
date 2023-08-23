@@ -1203,8 +1203,13 @@ header .menu-icon .section-title {
     row-gap: 2rem;
 }
 .services .services-text .services-more{
-	display: grid;
-    grid-template-columns: repeat(3, 1fr);
+	display: grid;    
+}
+.services .services-text .services-more:first-child{
+	grid-template-columns: repeat(3, 1fr);
+}
+.services .services-text .services-more:last-child{
+	grid-template-columns: repeat(2, 1fr);
 }
 .services .services-text .services-more .service{ 
 	display: flex;
@@ -1297,6 +1302,8 @@ header .menu-icon .section-title {
 	display: flex;
     justify-content: center;
     margin-top: 2rem;
+	align-items: center;
+	flex-direction: column;
 }
 /* ********************************** */
 /*               TEAM                 */
