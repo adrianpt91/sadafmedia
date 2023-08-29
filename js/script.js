@@ -2,6 +2,37 @@
 window.addEventListener('load', function() {
   var loadingFrame = document.getElementById('loading');
   loadingFrame.style.display = 'none';
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    let homepage = false;
+    let mousePosX = 0;
+    let mousePosY = 0;
+    let mouseCircle = document.getElementById("scope");
+
+    document.onmousemove = (e) => {
+        mousePosX = e.pageX;
+        mousePosY = e.pageY;
+        homepage = document.body.classList.contains("fp-viewing-home-0");
+    };
+
+    let delay = 3;
+    let revisedMousePosX = 0;
+    let revisedMousePosY = 0;
+
+    function delayMouseFollow() {
+        requestAnimationFrame(delayMouseFollow);
+        if (homepage) {
+            revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+            revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+            mouseCircle.style.top = revisedMousePosY + "px";
+            mouseCircle.style.left = revisedMousePosX + "px";
+        } else {
+            mouseCircle.style.top = "0px";
+            mouseCircle.style.left = "0px";
+        }
+    }
+
+    delayMouseFollow();
+  }
 });
 //============End loader========================//
 
@@ -186,10 +217,12 @@ var myFullpage = new fullpage('#fullpage', {
   },
   onLeave: function(index, nextIndex, origin){
     if(nextIndex.anchor!=="home"){
+      document.querySelector(".scope").style.display = "none";
       for (let i = 1; i < document.querySelectorAll('.white path').length; i++) {
         document.querySelectorAll('.white path')[i].style.display = 'none';
       }						
     }else {
+      document.querySelector(".scope").style.display = "block";
       for (let i = 1; i < document.querySelectorAll('.white path').length; i++) {
         document.querySelectorAll('.white path')[i].style.display = 'block';
       }
@@ -319,11 +352,16 @@ const projectItems = document.querySelectorAll('.project-item');
 const modalProject = document.getElementById('modalProject');
 const modalImage = document.getElementById('modalImage');
 const closeModalProject = document.querySelector('.close-project');
+const content = document.querySelector('.modal-project-text');
 
 projectItems.forEach(item => {
     item.addEventListener('click', () => {
-        const imgSrc = item.getAttribute('src');
+        const img = item.querySelector('img');
+        const imgSrc = img.getAttribute('src');
+        const h1Project = item.querySelector('h1');
+        console.log(h1Project)
         modalImage.setAttribute('src', imgSrc);
+        content.appendChild(h1Project);
         modalProject.classList.add('show');
         modalProject.scrollTop = 0;
         fullpage_api.setAllowScrolling(false);
@@ -333,12 +371,14 @@ projectItems.forEach(item => {
 closeModalProject.addEventListener('click', () => {  
   modalProject.classList.remove('show');
   fullpage_api.setAllowScrolling(true);
+  content.remove();
 });
 
 window.addEventListener('click', (event) => {
     if (event.target === modal) {
       modalProject.classList.remove('show');
       fullpage_api.setAllowScrolling(true);
+      content.remove();
     }
 });
 //============End Modal prohect logic========//
